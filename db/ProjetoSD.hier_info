@@ -1,0 +1,11 @@
+|Complemento
+SaidaComplemento[0] <= bit0.DB_MAX_OUTPUT_PORT_TYPE
+SaidaComplemento[1] <= bit1.DB_MAX_OUTPUT_PORT_TYPE
+SaidaComplemento[2] <= bit2.DB_MAX_OUTPUT_PORT_TYPE
+SaidaComplemento[3] <= bit3.DB_MAX_OUTPUT_PORT_TYPE
+EntradaComplemento[0] => bit0.IN0
+EntradaComplemento[1] => bit1.IN0
+EntradaComplemento[2] => bit2.IN0
+EntradaComplemento[3] => bit3.IN0
+
+
