@@ -1,7 +1,7 @@
-Quartus II 64-Bit
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Quartus II
+Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
 7
-3700
+3666
 OFF
 OFF
 OFF
@@ -20,41 +20,21 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-FullAdder
+Subtrador
 # storage
-db|ProjetoSD.(1).cnf
-db|ProjetoSD.(1).cnf
+db|ProjetoSD.(0).cnf
+db|ProjetoSD.(0).cnf
 # case_insensitive
 # source_file
-fulladder.bdf
-63dc30d2dddbc785929135bae3275cf2
+subtrador.bdf
+d53f46c82896cfdd6fab989617b9a42
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-FullAdder:inst
-FullAdder:inst4
-FullAdder:inst5
-FullAdder:inst6
-}
-# macro_sequence
-
-# end
-# entity
-Complemento
-# storage
-db|ProjetoSD.(0).cnf
-db|ProjetoSD.(0).cnf
-# case_insensitive
-# source_file
-complemento.bdf
-2b238f38d39f98b6628f468028d1bc37
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+|
 }
 # macro_sequence
 
@@ -62,8 +42,8 @@ AUTO
 # entity
 Somador
 # storage
-db|ProjetoSD.(2).cnf
-db|ProjetoSD.(2).cnf
+db|ProjetoSD.(1).cnf
+db|ProjetoSD.(1).cnf
 # case_insensitive
 # source_file
 somador.bdf
@@ -74,7 +54,54 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-|
+Somador:inst
+}
+# macro_sequence
+
+# end
+# entity
+FullAdder
+# storage
+db|ProjetoSD.(2).cnf
+db|ProjetoSD.(2).cnf
+# case_insensitive
+# source_file
+fulladder.bdf
+63dc30d2dddbc785929135bae3275cf2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somador:inst|FullAdder:inst
+Somador:inst|FullAdder:inst4
+Somador:inst|FullAdder:inst5
+Somador:inst|FullAdder:inst6
+Complemento:inst1|FullAdder:inst3
+Complemento:inst1|FullAdder:inst2
+Complemento:inst1|FullAdder:inst1
+Complemento:inst1|FullAdder:inst
+}
+# macro_sequence
+
+# end
+# entity
+Complemento
+# storage
+db|ProjetoSD.(3).cnf
+db|ProjetoSD.(3).cnf
+# case_insensitive
+# source_file
+complemento.bdf
+2b238f38d39f98b6628f468028d1bc37
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Complemento:inst1
 }
 # macro_sequence
 
