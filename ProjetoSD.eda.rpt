@@ -1,6 +1,6 @@
 EDA Netlist Writer report for ProjetoSD
-Thu Oct 11 20:59:45 2018
-Quartus II Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+Fri Oct 12 14:03:26 2018
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
 ---------------------
@@ -34,9 +34,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Oct 11 20:59:45 2018 ;
+; EDA Netlist Writer Status ; Successful - Fri Oct 12 14:03:26 2018 ;
 ; Revision Name             ; ProjetoSD                             ;
-; Top-level Entity Name     ; Complemento                           ;
+; Top-level Entity Name     ; Somador                               ;
 ; Family                    ; Stratix II                            ;
 +---------------------------+---------------------------------------+
 
@@ -45,31 +45,15 @@ applicable agreement for further details.
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus II EDA Netlist Writer
-    Info: Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
-    Info: Copyright (C) 1991-2010 Altera Corporation. All rights reserved.
-    Info: Your use of Altera Corporation's design tools, logic functions 
-    Info: and other software and tools, and its AMPP partner logic 
-    Info: functions, and any output files from any of the foregoing 
-    Info: (including device programming or simulation files), and any 
-    Info: associated documentation or information are expressly subject 
-    Info: to the terms and conditions of the Altera Program License 
-    Info: Subscription Agreement, Altera MegaCore Function License 
-    Info: Agreement, or other applicable license agreement, including, 
-    Info: without limitation, that your use is for the sole purpose of 
-    Info: programming logic devices manufactured by Altera and sold by 
-    Info: Altera or its authorized distributors.  Please refer to the 
-    Info: applicable agreement for further details.
-    Info: Processing started: Thu Oct 11 20:59:44 2018
-Info: Command: quartus_eda ProjetoSD --board_boundary_scan=on --format=bsdl --bsdl_type=POST_CONFIG --output_directory=C:/altera/91sp1/quartus/ProjetoSD
-Warning: Ignored assignments for entity "ProjetoSD" -- entity does not exist in design
-    Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity ProjetoSD -section_id "Root Region" was ignored
-    Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity ProjetoSD -section_id "Root Region" was ignored
+Info: Running Quartus II 64-Bit EDA Netlist Writer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Fri Oct 12 14:03:26 2018
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off ProjetoSD -c ProjetoSD
 Warning: Device family does not support board-level Boundary-Scan Description Language file generation
-Info: Quartus II EDA Netlist Writer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 218 megabytes
-    Info: Processing ended: Thu Oct 11 20:59:45 2018
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 287 megabytes
+    Info: Processing ended: Fri Oct 12 14:03:26 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
 
 

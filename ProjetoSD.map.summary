@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Oct 11 20:24:58 2018
-Quartus II Version : 9.1 Build 304 01/25/2010 SP 1 SJ Web Edition
+Analysis & Synthesis Status : Successful - Fri Oct 12 14:03:16 2018
+Quartus II 64-Bit Version : 9.1 Build 350 03/24/2010 SP 2 SJ Full Version
 Revision Name : ProjetoSD
-Top-level Entity Name : Complemento
+Top-level Entity Name : Somador
 Family : Stratix II
 Logic utilization : N/A
-    Combinational ALUTs : 0
+    Combinational ALUTs : 5
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 8
+Total pins : 12
 Total virtual pins : 0
 Total block memory bits : 0
 DSP block 9-bit elements : 0

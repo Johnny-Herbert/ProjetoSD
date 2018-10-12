@@ -139,11 +139,12 @@ TRANSITION_LIST("EntradaComplemento[3]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 12;
-			LEVEL 0 FOR 40.0;
-			LEVEL 1 FOR 40.0;
+			REPEAT = 15;
+			LEVEL 0 FOR 32.0;
+			LEVEL 1 FOR 32.0;
 		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 32.0;
+		LEVEL 1 FOR 8.0;
 	}
 }
 
@@ -154,10 +155,11 @@ TRANSITION_LIST("EntradaComplemento[2]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 25;
-			LEVEL 0 FOR 20.0;
-			LEVEL 1 FOR 20.0;
+			REPEAT = 31;
+			LEVEL 0 FOR 16.0;
+			LEVEL 1 FOR 16.0;
 		}
+		LEVEL 0 FOR 8.0;
 	}
 }
 
@@ -168,10 +170,11 @@ TRANSITION_LIST("EntradaComplemento[1]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 50;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
+			REPEAT = 62;
+			LEVEL 0 FOR 8.0;
+			LEVEL 1 FOR 8.0;
 		}
+		LEVEL 0 FOR 8.0;
 	}
 }
 
@@ -182,9 +185,9 @@ TRANSITION_LIST("EntradaComplemento[0]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 100;
-			LEVEL 0 FOR 5.0;
-			LEVEL 1 FOR 5.0;
+			REPEAT = 125;
+			LEVEL 0 FOR 4.0;
+			LEVEL 1 FOR 4.0;
 		}
 	}
 }
@@ -196,11 +199,12 @@ TRANSITION_LIST("SaidaComplemento[3]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 12;
-			LEVEL 0 FOR 40.0;
-			LEVEL 1 FOR 40.0;
+			REPEAT = 15;
+			LEVEL 0 FOR 32.0;
+			LEVEL 1 FOR 32.0;
 		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 32.0;
+		LEVEL 1 FOR 8.0;
 	}
 }
 
@@ -211,10 +215,11 @@ TRANSITION_LIST("SaidaComplemento[2]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 25;
-			LEVEL 0 FOR 20.0;
-			LEVEL 1 FOR 20.0;
+			REPEAT = 31;
+			LEVEL 0 FOR 16.0;
+			LEVEL 1 FOR 16.0;
 		}
+		LEVEL 0 FOR 8.0;
 	}
 }
 
@@ -225,10 +230,11 @@ TRANSITION_LIST("SaidaComplemento[1]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 50;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
+			REPEAT = 62;
+			LEVEL 0 FOR 8.0;
+			LEVEL 1 FOR 8.0;
 		}
+		LEVEL 0 FOR 8.0;
 	}
 }
 
@@ -239,9 +245,9 @@ TRANSITION_LIST("SaidaComplemento[0]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 100;
-			LEVEL 0 FOR 5.0;
-			LEVEL 1 FOR 5.0;
+			REPEAT = 125;
+			LEVEL 0 FOR 4.0;
+			LEVEL 1 FOR 4.0;
 		}
 	}
 }
@@ -249,7 +255,7 @@ TRANSITION_LIST("SaidaComplemento[0]")
 DISPLAY_LINE
 {
 	CHANNEL = "EntradaComplemento";
-	EXPAND_STATUS = COLLAPSED;
+	EXPAND_STATUS = EXPANDED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
@@ -299,7 +305,7 @@ DISPLAY_LINE
 DISPLAY_LINE
 {
 	CHANNEL = "SaidaComplemento";
-	EXPAND_STATUS = COLLAPSED;
+	EXPAND_STATUS = EXPANDED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 0;

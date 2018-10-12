@@ -1,6 +1,6 @@
 Simulator report for ProjetoSD
-Thu Oct 11 20:26:14 2018
-Quartus II Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+Fri Oct 12 14:05:28 2018
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
 ---------------------
@@ -45,48 +45,48 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 8 nodes      ;
+; Simulation Netlist Size     ; 39 nodes     ;
 ; Simulation Coverage         ;     100.00 % ;
-; Total Number of Transitions ; 742          ;
+; Total Number of Transitions ; 7456         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                           ;
-+--------------------------------------------------------------------------------------------+-----------------+---------------+
-; Option                                                                                     ; Setting         ; Default Value ;
-+--------------------------------------------------------------------------------------------+-----------------+---------------+
-; Simulation mode                                                                            ; Functional      ; Timing        ;
-; Start time                                                                                 ; 0 ns            ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF            ;               ;
-; Vector input source                                                                        ; Complemento.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On              ; On            ;
-; Check outputs                                                                              ; Off             ; Off           ;
-; Report simulation coverage                                                                 ; On              ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On              ; On            ;
-; Display missing 1-value coverage report                                                    ; On              ; On            ;
-; Display missing 0-value coverage report                                                    ; On              ; On            ;
-; Detect setup and hold time violations                                                      ; Off             ; Off           ;
-; Detect glitches                                                                            ; Off             ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off             ; Off           ;
-; Generate Signal Activity File                                                              ; Off             ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off             ; Off           ;
-; Group bus channels in simulation results                                                   ; Off             ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On              ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE      ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off             ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off             ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto            ; Auto          ;
-+--------------------------------------------------------------------------------------------+-----------------+---------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                       ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Option                                                                                     ; Setting     ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Simulation mode                                                                            ; Functional  ; Timing        ;
+; Start time                                                                                 ; 0 ns        ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF        ;               ;
+; Vector input source                                                                        ; Somador.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On          ; On            ;
+; Check outputs                                                                              ; Off         ; Off           ;
+; Report simulation coverage                                                                 ; On          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On          ; On            ;
+; Display missing 1-value coverage report                                                    ; On          ; On            ;
+; Display missing 0-value coverage report                                                    ; On          ; On            ;
+; Detect setup and hold time violations                                                      ; Off         ; Off           ;
+; Detect glitches                                                                            ; Off         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off         ; Off           ;
+; Generate Signal Activity File                                                              ; Off         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto        ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
 
 
 +----------------------+
 ; Simulation Waveforms ;
 +----------------------+
 Waveform report data cannot be output to ASCII.
-Please use Quartus II to view the waveform report data.
+Please use Quartus II 64-Bit to view the waveform report data.
 
 
 +--------------------------------------------------------------------+
@@ -95,9 +95,9 @@ Please use Quartus II to view the waveform report data.
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
 ; Total coverage as a percentage                      ;     100.00 % ;
-; Total nodes checked                                 ; 8            ;
-; Total output ports checked                          ; 8            ;
-; Total output ports with complete 1/0-value coverage ; 8            ;
+; Total nodes checked                                 ; 39           ;
+; Total output ports checked                          ; 39           ;
+; Total output ports with complete 1/0-value coverage ; 39           ;
 ; Total output ports with no 1/0-value coverage       ; 0            ;
 ; Total output ports with no 1-value coverage         ; 0            ;
 ; Total output ports with no 0-value coverage         ; 0            ;
@@ -105,20 +105,51 @@ Please use Quartus II to view the waveform report data.
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+--------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                ;
-+------------------------------------+------------------------------------+------------------+
-; Node Name                          ; Output Port Name                   ; Output Port Type ;
-+------------------------------------+------------------------------------+------------------+
-; |Complemento|SaidaComplemento[3]   ; |Complemento|SaidaComplemento[3]   ; pin_out          ;
-; |Complemento|SaidaComplemento[2]   ; |Complemento|SaidaComplemento[2]   ; pin_out          ;
-; |Complemento|SaidaComplemento[1]   ; |Complemento|SaidaComplemento[1]   ; pin_out          ;
-; |Complemento|SaidaComplemento[0]   ; |Complemento|SaidaComplemento[0]   ; pin_out          ;
-; |Complemento|EntradaComplemento[3] ; |Complemento|EntradaComplemento[3] ; out              ;
-; |Complemento|EntradaComplemento[2] ; |Complemento|EntradaComplemento[2] ; out              ;
-; |Complemento|EntradaComplemento[1] ; |Complemento|EntradaComplemento[1] ; out              ;
-; |Complemento|EntradaComplemento[0] ; |Complemento|EntradaComplemento[0] ; out              ;
-+------------------------------------+------------------------------------+------------------+
++--------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                          ;
++---------------------------------+---------------------------------+------------------+
+; Node Name                       ; Output Port Name                ; Output Port Type ;
++---------------------------------+---------------------------------+------------------+
+; |Somador|SaidaSomador[3]        ; |Somador|SaidaSomador[3]        ; pin_out          ;
+; |Somador|SaidaSomador[2]        ; |Somador|SaidaSomador[2]        ; pin_out          ;
+; |Somador|SaidaSomador[1]        ; |Somador|SaidaSomador[1]        ; pin_out          ;
+; |Somador|SaidaSomador[0]        ; |Somador|SaidaSomador[0]        ; pin_out          ;
+; |Somador|Vetor2Somador[3]       ; |Somador|Vetor2Somador[3]       ; out              ;
+; |Somador|Vetor2Somador[2]       ; |Somador|Vetor2Somador[2]       ; out              ;
+; |Somador|Vetor2Somador[1]       ; |Somador|Vetor2Somador[1]       ; out              ;
+; |Somador|Vetor2Somador[0]       ; |Somador|Vetor2Somador[0]       ; out              ;
+; |Somador|Vetor1Somador[3]       ; |Somador|Vetor1Somador[3]       ; out              ;
+; |Somador|Vetor1Somador[2]       ; |Somador|Vetor1Somador[2]       ; out              ;
+; |Somador|Vetor1Somador[1]       ; |Somador|Vetor1Somador[1]       ; out              ;
+; |Somador|Vetor1Somador[0]       ; |Somador|Vetor1Somador[0]       ; out              ;
+; |Somador|FullAdder:inst6|inst4  ; |Somador|FullAdder:inst6|inst4  ; out0             ;
+; |Somador|FullAdder:inst6|inst5  ; |Somador|FullAdder:inst6|inst5  ; out0             ;
+; |Somador|FullAdder:inst6|inst8  ; |Somador|FullAdder:inst6|inst8  ; out0             ;
+; |Somador|FullAdder:inst6|inst12 ; |Somador|FullAdder:inst6|inst12 ; out0             ;
+; |Somador|FullAdder:inst5|inst4  ; |Somador|FullAdder:inst5|inst4  ; out0             ;
+; |Somador|FullAdder:inst5|inst5  ; |Somador|FullAdder:inst5|inst5  ; out0             ;
+; |Somador|FullAdder:inst5|inst7  ; |Somador|FullAdder:inst5|inst7  ; out0             ;
+; |Somador|FullAdder:inst5|inst8  ; |Somador|FullAdder:inst5|inst8  ; out0             ;
+; |Somador|FullAdder:inst5|inst6  ; |Somador|FullAdder:inst5|inst6  ; out0             ;
+; |Somador|FullAdder:inst5|inst13 ; |Somador|FullAdder:inst5|inst13 ; out0             ;
+; |Somador|FullAdder:inst5|inst11 ; |Somador|FullAdder:inst5|inst11 ; out0             ;
+; |Somador|FullAdder:inst5|inst12 ; |Somador|FullAdder:inst5|inst12 ; out0             ;
+; |Somador|FullAdder:inst5|inst10 ; |Somador|FullAdder:inst5|inst10 ; out0             ;
+; |Somador|FullAdder:inst4|inst4  ; |Somador|FullAdder:inst4|inst4  ; out0             ;
+; |Somador|FullAdder:inst4|inst5  ; |Somador|FullAdder:inst4|inst5  ; out0             ;
+; |Somador|FullAdder:inst4|inst7  ; |Somador|FullAdder:inst4|inst7  ; out0             ;
+; |Somador|FullAdder:inst4|inst8  ; |Somador|FullAdder:inst4|inst8  ; out0             ;
+; |Somador|FullAdder:inst4|inst6  ; |Somador|FullAdder:inst4|inst6  ; out0             ;
+; |Somador|FullAdder:inst4|inst13 ; |Somador|FullAdder:inst4|inst13 ; out0             ;
+; |Somador|FullAdder:inst4|inst11 ; |Somador|FullAdder:inst4|inst11 ; out0             ;
+; |Somador|FullAdder:inst4|inst12 ; |Somador|FullAdder:inst4|inst12 ; out0             ;
+; |Somador|FullAdder:inst4|inst10 ; |Somador|FullAdder:inst4|inst10 ; out0             ;
+; |Somador|FullAdder:inst|inst4   ; |Somador|FullAdder:inst|inst4   ; out0             ;
+; |Somador|FullAdder:inst|inst5   ; |Somador|FullAdder:inst|inst5   ; out0             ;
+; |Somador|FullAdder:inst|inst7   ; |Somador|FullAdder:inst|inst7   ; out0             ;
+; |Somador|FullAdder:inst|inst8   ; |Somador|FullAdder:inst|inst8   ; out0             ;
+; |Somador|FullAdder:inst|inst6   ; |Somador|FullAdder:inst|inst6   ; out0             ;
++---------------------------------+---------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
@@ -148,20 +179,20 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; Simulator Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II Simulator
-    Info: Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Oct 11 20:26:14 2018
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Fri Oct 12 14:05:28 2018
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ProjetoSD -c ProjetoSD
-Info: Using vector source file "C:/altera/91sp1/quartus/ProjetoSD/Complemento.vwf"
+Info: Using vector source file "D:/Users/jhmn/Desktop/ProjetoSD/Somador.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is     100.00 %
-Info: Number of transitions in simulation is 742
-Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 173 megabytes
-    Info: Processing ended: Thu Oct 11 20:26:14 2018
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Number of transitions in simulation is 7456
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 233 megabytes
+    Info: Processing ended: Fri Oct 12 14:05:29 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

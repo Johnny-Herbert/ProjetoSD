@@ -1,7 +1,7 @@
-Quartus II
-Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+Quartus II 64-Bit
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 7
-3666
+3700
 OFF
 OFF
 OFF
@@ -20,6 +20,29 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
+FullAdder
+# storage
+db|ProjetoSD.(1).cnf
+db|ProjetoSD.(1).cnf
+# case_insensitive
+# source_file
+fulladder.bdf
+63dc30d2dddbc785929135bae3275cf2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+FullAdder:inst
+FullAdder:inst4
+FullAdder:inst5
+FullAdder:inst6
+}
+# macro_sequence
+
+# end
+# entity
 Complemento
 # storage
 db|ProjetoSD.(0).cnf
@@ -27,7 +50,24 @@ db|ProjetoSD.(0).cnf
 # case_insensitive
 # source_file
 complemento.bdf
-a5b5250efe3b6ef928a3255d426eea
+2b238f38d39f98b6628f468028d1bc37
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Somador
+# storage
+db|ProjetoSD.(2).cnf
+db|ProjetoSD.(2).cnf
+# case_insensitive
+# source_file
+somador.bdf
+b8e9db53cf7ce8f8a26289fa43067d8
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
