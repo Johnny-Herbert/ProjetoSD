@@ -1,5 +1,5 @@
 Assembler report for ProjetoSD
-Fri Oct 12 19:28:16 2018
+Tue Oct 23 20:25:46 2018
 Quartus II Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Oct 12 19:28:16 2018 ;
+; Assembler Status      ; Successful - Tue Oct 23 20:25:46 2018 ;
 ; Revision Name         ; ProjetoSD                             ;
-; Top-level Entity Name ; Subtrador                             ;
+; Top-level Entity Name ; Somador                               ;
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -96,7 +96,7 @@ applicable agreement for further details.
 +----------------+---------------------------------------------------------+
 ; Device         ; EP2S15F484C3                                            ;
 ; JTAG usercode  ; 0xFFFFFFFF                                              ;
-; Checksum       ; 0x00277425                                              ;
+; Checksum       ; 0x00277990                                              ;
 +----------------+---------------------------------------------------------+
 
 
@@ -107,7 +107,7 @@ applicable agreement for further details.
 +--------------------+-----------------------------------------------------+
 ; Device             ; EPC16                                               ;
 ; JTAG usercode      ; 0xFFFFFFFF                                          ;
-; Checksum           ; 0x1EF63751                                          ;
+; Checksum           ; 0x1EF5F8D3                                          ;
 ; Compression Ratio  ; 3                                                   ;
 +--------------------+-----------------------------------------------------+
 
@@ -118,14 +118,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Oct 12 19:28:13 2018
+    Info: Processing started: Tue Oct 23 20:25:42 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ProjetoSD -c ProjetoSD
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 267 megabytes
-    Info: Processing ended: Fri Oct 12 19:28:16 2018
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Tue Oct 23 20:25:47 2018
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:03
 
 

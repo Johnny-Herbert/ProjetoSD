@@ -1,5 +1,5 @@
 Flow report for ProjetoSD
-Fri Oct 12 19:28:20 2018
+Tue Oct 23 20:25:51 2018
 Quartus II Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-------------------------------+----------------------------------------------+
-; Flow Status                   ; Successful - Fri Oct 12 19:28:20 2018        ;
+; Flow Status                   ; Successful - Tue Oct 23 20:25:51 2018        ;
 ; Quartus II Version            ; 9.1 Build 304 01/25/2010 SP 1 SJ Web Edition ;
 ; Revision Name                 ; ProjetoSD                                    ;
-; Top-level Entity Name         ; Subtrador                                    ;
+; Top-level Entity Name         ; Somador                                      ;
 ; Family                        ; Stratix II                                   ;
 ; Met timing requirements       ; Yes                                          ;
 ; Logic utilization             ; < 1 %                                        ;
-;     Combinational ALUTs       ; 7 / 12,480 ( < 1 % )                         ;
+;     Combinational ALUTs       ; 6 / 12,480 ( < 1 % )                         ;
 ;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                           ;
 ; Total registers               ; 0                                            ;
-; Total pins                    ; 12 / 343 ( 3 % )                             ;
+; Total pins                    ; 13 / 343 ( 4 % )                             ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0 / 419,328 ( 0 % )                          ;
 ; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/12/2018 19:27:57 ;
+; Start date & time ; 10/23/2018 20:25:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ProjetoSD           ;
 +-------------------+---------------------+
@@ -75,13 +75,13 @@ applicable agreement for further details.
 +-------------------------------------+-----------------------------------+---------------+-------------+--------------------------------+
 ; Assignment Name                     ; Value                             ; Default Value ; Entity Name ; Section Id                     ;
 +-------------------------------------+-----------------------------------+---------------+-------------+--------------------------------+
-; COMPILER_SIGNATURE_ID               ; 110073156208000.153938327605204   ; --            ; --          ; --                             ;
+; COMPILER_SIGNATURE_ID               ; 110073156208000.154033712406956   ; --            ; --          ; --                             ;
 ; EDA_BOARD_BOUNDARY_SCAN_OPERATION   ; POST_CONFIG                       ; --            ; --          ; eda_board_design_boundary_scan ;
 ; EDA_BOARD_DESIGN_BOUNDARY_SCAN_TOOL ; BSDL (Boundary Scan)              ; <None>        ; --          ; --                             ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/altera/91sp1/quartus/ProjetoSD ; --            ; --          ; eda_board_design_boundary_scan ;
-; PARTITION_COLOR                     ; 16764057                          ; --            ; Subtrador   ; Top                            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                            ; --            ; Subtrador   ; Top                            ;
-; TOP_LEVEL_ENTITY                    ; Subtrador                         ; ProjetoSD     ; --          ; --                             ;
+; PARTITION_COLOR                     ; 16764057                          ; --            ; Somador     ; Top                            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                            ; --            ; Somador     ; Top                            ;
+; TOP_LEVEL_ENTITY                    ; Somador                           ; ProjetoSD     ; --          ; --                             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS  ; Off                               ; --            ; --          ; eda_blast_fpga                 ;
 +-------------------------------------+-----------------------------------+---------------+-------------+--------------------------------+
 
@@ -91,12 +91,12 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 244 MB              ; 00:00:02                           ;
-; Fitter                  ; 00:00:09     ; 1.0                     ; 312 MB              ; 00:00:07                           ;
-; Assembler               ; 00:00:03     ; 1.0                     ; 267 MB              ; 00:00:03                           ;
-; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 197 MB              ; 00:00:01                           ;
+; Analysis & Synthesis    ; 00:00:03     ; 1.0                     ; 244 MB              ; 00:00:02                           ;
+; Fitter                  ; 00:00:10     ; 1.0                     ; 312 MB              ; 00:00:07                           ;
+; Assembler               ; 00:00:04     ; 1.0                     ; 267 MB              ; 00:00:03                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 197 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer      ; 00:00:00     ; 1.0                     ; 208 MB              ; 00:00:01                           ;
-; Total                   ; 00:00:15     ; --                      ; --                  ; 00:00:14                           ;
+; Total                   ; 00:00:17     ; --                      ; --                  ; 00:00:14                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

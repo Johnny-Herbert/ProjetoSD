@@ -33,29 +33,6 @@ d53f46c82896cfdd6fab989617b9a42
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
-Somador
-# storage
-db|ProjetoSD.(1).cnf
-db|ProjetoSD.(1).cnf
-# case_insensitive
-# source_file
-somador.bdf
-b8e9db53cf7ce8f8a26289fa43067d8
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-Somador:inst
-}
 # macro_sequence
 
 # end
@@ -74,14 +51,10 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Somador:inst|FullAdder:inst
-Somador:inst|FullAdder:inst4
-Somador:inst|FullAdder:inst5
-Somador:inst|FullAdder:inst6
-Complemento:inst1|FullAdder:inst3
-Complemento:inst1|FullAdder:inst2
-Complemento:inst1|FullAdder:inst1
-Complemento:inst1|FullAdder:inst
+FullAdder:inst4
+FullAdder:inst5
+FullAdder:inst6
+FullAdder:inst
 }
 # macro_sequence
 
@@ -100,8 +73,25 @@ complemento.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+Somador
+# storage
+db|ProjetoSD.(1).cnf
+db|ProjetoSD.(1).cnf
+# case_insensitive
+# source_file
+somador.bdf
+17426860ebb62edd975cab2a84f7c00
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
-Complemento:inst1
+|
 }
 # macro_sequence
 
