@@ -1,6 +1,6 @@
 Assembler report for ProjetoSD
-Tue Oct 23 20:25:46 2018
-Quartus II Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+Wed Oct 24 15:19:36 2018
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
 ---------------------
@@ -10,8 +10,8 @@ Quartus II Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/nicol/Desktop/ProjetoSD/ProjetoSD.sof
-  6. Assembler Device Options: C:/Users/nicol/Desktop/ProjetoSD/ProjetoSD.pof
+  5. Assembler Device Options: D:/Users/jhmn/Desktop/ProjetoSD/ProjetoSD.sof
+  6. Assembler Device Options: D:/Users/jhmn/Desktop/ProjetoSD/ProjetoSD.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Oct 23 20:25:46 2018 ;
+; Assembler Status      ; Successful - Wed Oct 24 15:19:36 2018 ;
 ; Revision Name         ; ProjetoSD                             ;
-; Top-level Entity Name ; Somador                               ;
+; Top-level Entity Name ; Subtrador                             ;
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -79,53 +79,53 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+------------------------------------------------+
-; Assembler Generated Files                      ;
-+------------------------------------------------+
-; File Name                                      ;
-+------------------------------------------------+
-; C:/Users/nicol/Desktop/ProjetoSD/ProjetoSD.sof ;
-; C:/Users/nicol/Desktop/ProjetoSD/ProjetoSD.pof ;
-+------------------------------------------------+
++-----------------------------------------------+
+; Assembler Generated Files                     ;
++-----------------------------------------------+
+; File Name                                     ;
++-----------------------------------------------+
+; D:/Users/jhmn/Desktop/ProjetoSD/ProjetoSD.sof ;
+; D:/Users/jhmn/Desktop/ProjetoSD/ProjetoSD.pof ;
++-----------------------------------------------+
 
 
-+--------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/nicol/Desktop/ProjetoSD/ProjetoSD.sof ;
-+----------------+---------------------------------------------------------+
-; Option         ; Setting                                                 ;
-+----------------+---------------------------------------------------------+
-; Device         ; EP2S15F484C3                                            ;
-; JTAG usercode  ; 0xFFFFFFFF                                              ;
-; Checksum       ; 0x00277990                                              ;
-+----------------+---------------------------------------------------------+
++-------------------------------------------------------------------------+
+; Assembler Device Options: D:/Users/jhmn/Desktop/ProjetoSD/ProjetoSD.sof ;
++----------------+--------------------------------------------------------+
+; Option         ; Setting                                                ;
++----------------+--------------------------------------------------------+
+; Device         ; EP2S15F484C3                                           ;
+; JTAG usercode  ; 0xFFFFFFFF                                             ;
+; Checksum       ; 0x00277C08                                             ;
++----------------+--------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/nicol/Desktop/ProjetoSD/ProjetoSD.pof ;
-+--------------------+-----------------------------------------------------+
-; Option             ; Setting                                             ;
-+--------------------+-----------------------------------------------------+
-; Device             ; EPC16                                               ;
-; JTAG usercode      ; 0xFFFFFFFF                                          ;
-; Checksum           ; 0x1EF5F8D3                                          ;
-; Compression Ratio  ; 3                                                   ;
-+--------------------+-----------------------------------------------------+
++-------------------------------------------------------------------------+
+; Assembler Device Options: D:/Users/jhmn/Desktop/ProjetoSD/ProjetoSD.pof ;
++--------------------+----------------------------------------------------+
+; Option             ; Setting                                            ;
++--------------------+----------------------------------------------------+
+; Device             ; EPC16                                              ;
+; JTAG usercode      ; 0xFFFFFFFF                                         ;
+; Checksum           ; 0x1EF5A4E2                                         ;
+; Compression Ratio  ; 3                                                  ;
++--------------------+----------------------------------------------------+
 
 
 +--------------------+
 ; Assembler Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II Assembler
-    Info: Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Oct 23 20:25:42 2018
+Info: Running Quartus II 64-Bit Assembler
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Wed Oct 24 15:19:35 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ProjetoSD -c ProjetoSD
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
-Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 267 megabytes
-    Info: Processing ended: Tue Oct 23 20:25:47 2018
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:03
+Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 341 megabytes
+    Info: Processing ended: Wed Oct 24 15:19:36 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

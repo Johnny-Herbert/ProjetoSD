@@ -1,6 +1,6 @@
 Classic Timing Analyzer report for ProjetoSD
-Tue Oct 23 20:25:48 2018
-Quartus II Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+Wed Oct 24 15:19:37 2018
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
 ---------------------
@@ -34,14 +34,14 @@ applicable agreement for further details.
 
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                                                                                        ;
-+------------------------------+-------+---------------+-------------+------------------+-----------------+------------+----------+--------------+
-; Type                         ; Slack ; Required Time ; Actual Time ; From             ; To              ; From Clock ; To Clock ; Failed Paths ;
-+------------------------------+-------+---------------+-------------+------------------+-----------------+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 11.018 ns   ; Vetor1Somador[1] ; SaidaSomador[3] ; --         ; --       ; 0            ;
-; Total number of failed paths ;       ;               ;             ;                  ;                 ;            ;          ; 0            ;
-+------------------------------+-------+---------------+-------------+------------------+-----------------+------------+----------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                   ;
++------------------------------+-------+---------------+-------------+--------------------+----------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From               ; To       ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+--------------------+----------+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 9.791 ns    ; Vetor2Subtrador[1] ; Overflow ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;                    ;          ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+--------------------+----------+------------+----------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -76,72 +76,79 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 2      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------+
-; tpd                                                                              ;
-+-------+-------------------+-----------------+------------------+-----------------+
-; Slack ; Required P2P Time ; Actual P2P Time ; From             ; To              ;
-+-------+-------------------+-----------------+------------------+-----------------+
-; N/A   ; None              ; 11.018 ns       ; Vetor1Somador[1] ; SaidaSomador[3] ;
-; N/A   ; None              ; 10.872 ns       ; Vetor1Somador[1] ; SaidaSomador[2] ;
-; N/A   ; None              ; 10.202 ns       ; Vetor2Somador[1] ; SaidaSomador[3] ;
-; N/A   ; None              ; 10.056 ns       ; Vetor2Somador[1] ; SaidaSomador[2] ;
-; N/A   ; None              ; 9.881 ns        ; Vetor1Somador[0] ; SaidaSomador[3] ;
-; N/A   ; None              ; 9.881 ns        ; Vetor2Somador[3] ; SaidaSomador[3] ;
-; N/A   ; None              ; 9.853 ns        ; Vetor2Somador[2] ; SaidaSomador[3] ;
-; N/A   ; None              ; 9.851 ns        ; Vetor2Somador[0] ; SaidaSomador[3] ;
-; N/A   ; None              ; 9.735 ns        ; Vetor1Somador[0] ; SaidaSomador[2] ;
-; N/A   ; None              ; 9.705 ns        ; Vetor2Somador[0] ; SaidaSomador[2] ;
-; N/A   ; None              ; 9.657 ns        ; Vetor1Somador[1] ; SaidaSomador[1] ;
-; N/A   ; None              ; 9.609 ns        ; Vetor1Somador[3] ; SaidaSomador[3] ;
-; N/A   ; None              ; 9.548 ns        ; Vetor1Somador[2] ; SaidaSomador[3] ;
-; N/A   ; None              ; 9.539 ns        ; Vetor2Somador[2] ; SaidaSomador[2] ;
-; N/A   ; None              ; 9.402 ns        ; Vetor1Somador[2] ; SaidaSomador[2] ;
-; N/A   ; None              ; 9.268 ns        ; Vetor1Somador[0] ; SaidaSomador[0] ;
-; N/A   ; None              ; 9.238 ns        ; Vetor2Somador[0] ; SaidaSomador[0] ;
-; N/A   ; None              ; 8.973 ns        ; Vetor2Somador[1] ; SaidaSomador[1] ;
-; N/A   ; None              ; 8.653 ns        ; Vetor1Somador[1] ; Overflow        ;
-; N/A   ; None              ; 8.621 ns        ; Vetor2Somador[0] ; SaidaSomador[1] ;
-; N/A   ; None              ; 8.618 ns        ; Vetor1Somador[0] ; SaidaSomador[1] ;
-; N/A   ; None              ; 8.260 ns        ; Vetor2Somador[3] ; Overflow        ;
-; N/A   ; None              ; 8.040 ns        ; Vetor2Somador[2] ; Overflow        ;
-; N/A   ; None              ; 7.837 ns        ; Vetor2Somador[1] ; Overflow        ;
-; N/A   ; None              ; 7.584 ns        ; Vetor1Somador[3] ; Overflow        ;
-; N/A   ; None              ; 7.516 ns        ; Vetor1Somador[0] ; Overflow        ;
-; N/A   ; None              ; 7.486 ns        ; Vetor2Somador[0] ; Overflow        ;
-; N/A   ; None              ; 7.433 ns        ; Vetor1Somador[2] ; Overflow        ;
-+-------+-------------------+-----------------+------------------+-----------------+
++--------------------------------------------------------------------------------------+
+; tpd                                                                                  ;
++-------+-------------------+-----------------+--------------------+-------------------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From               ; To                ;
++-------+-------------------+-----------------+--------------------+-------------------+
+; N/A   ; None              ; 9.791 ns        ; Vetor2Subtrador[1] ; Overflow          ;
+; N/A   ; None              ; 9.415 ns        ; Vetor2Subtrador[2] ; Overflow          ;
+; N/A   ; None              ; 9.293 ns        ; Vetor2Subtrador[1] ; SaidaSubtrador[1] ;
+; N/A   ; None              ; 9.252 ns        ; Vetor1Subtrador[1] ; Overflow          ;
+; N/A   ; None              ; 9.214 ns        ; Vetor2Subtrador[0] ; Overflow          ;
+; N/A   ; None              ; 9.194 ns        ; Vetor2Subtrador[3] ; Overflow          ;
+; N/A   ; None              ; 9.151 ns        ; Vetor1Subtrador[0] ; Overflow          ;
+; N/A   ; None              ; 9.142 ns        ; Vetor1Subtrador[1] ; SaidaSubtrador[2] ;
+; N/A   ; None              ; 9.114 ns        ; Vetor1Subtrador[2] ; Overflow          ;
+; N/A   ; None              ; 9.106 ns        ; Vetor2Subtrador[2] ; SaidaSubtrador[2] ;
+; N/A   ; None              ; 9.046 ns        ; Vetor2Subtrador[1] ; SaidaSubtrador[2] ;
+; N/A   ; None              ; 9.032 ns        ; Vetor1Subtrador[0] ; SaidaSubtrador[2] ;
+; N/A   ; None              ; 8.993 ns        ; Vetor1Subtrador[2] ; SaidaSubtrador[2] ;
+; N/A   ; None              ; 8.969 ns        ; Vetor1Subtrador[0] ; SaidaSubtrador[1] ;
+; N/A   ; None              ; 8.955 ns        ; Vetor1Subtrador[3] ; Overflow          ;
+; N/A   ; None              ; 8.946 ns        ; Vetor1Subtrador[0] ; SaidaSubtrador[0] ;
+; N/A   ; None              ; 8.907 ns        ; Vetor1Subtrador[1] ; SaidaSubtrador[1] ;
+; N/A   ; None              ; 8.906 ns        ; Vetor2Subtrador[1] ; SaidaSubtrador[3] ;
+; N/A   ; None              ; 8.734 ns        ; Vetor2Subtrador[0] ; SaidaSubtrador[2] ;
+; N/A   ; None              ; 8.714 ns        ; Vetor2Subtrador[0] ; SaidaSubtrador[1] ;
+; N/A   ; None              ; 8.692 ns        ; Vetor2Subtrador[0] ; SaidaSubtrador[0] ;
+; N/A   ; None              ; 8.530 ns        ; Vetor2Subtrador[2] ; SaidaSubtrador[3] ;
+; N/A   ; None              ; 8.357 ns        ; Vetor1Subtrador[1] ; SaidaSubtrador[3] ;
+; N/A   ; None              ; 8.350 ns        ; Vetor2Subtrador[3] ; SaidaSubtrador[3] ;
+; N/A   ; None              ; 8.329 ns        ; Vetor2Subtrador[0] ; SaidaSubtrador[3] ;
+; N/A   ; None              ; 8.256 ns        ; Vetor1Subtrador[0] ; SaidaSubtrador[3] ;
+; N/A   ; None              ; 8.219 ns        ; Vetor1Subtrador[2] ; SaidaSubtrador[3] ;
+; N/A   ; None              ; 7.993 ns        ; Vetor1Subtrador[3] ; SaidaSubtrador[3] ;
++-------+-------------------+-----------------+--------------------+-------------------+
 
 
 +--------------------------+
 ; Timing Analyzer Messages ;
 +--------------------------+
 Info: *******************************************************************
-Info: Running Quartus II Classic Timing Analyzer
-    Info: Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Oct 23 20:25:48 2018
+Info: Running Quartus II 64-Bit Classic Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Wed Oct 24 15:19:37 2018
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off ProjetoSD -c ProjetoSD --timing_analysis_only
-Info: Longest tpd from source pin "Vetor1Somador[1]" to destination pin "SaidaSomador[3]" is 11.018 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.817 ns) = 0.817 ns; Loc. = PIN_F15; Fanout = 2; PIN Node = 'Vetor1Somador[1]'
-    Info: 2: + IC(4.809 ns) + CELL(0.346 ns) = 5.972 ns; Loc. = LCCOMB_X3_Y1_N16; Fanout = 3; COMB Node = 'FullAdder:inst5|inst13~0'
-    Info: 3: + IC(0.269 ns) + CELL(0.366 ns) = 6.607 ns; Loc. = LCCOMB_X3_Y1_N10; Fanout = 1; COMB Node = 'FullAdder:inst|inst4~0'
-    Info: 4: + IC(2.267 ns) + CELL(2.144 ns) = 11.018 ns; Loc. = PIN_W4; Fanout = 0; PIN Node = 'SaidaSomador[3]'
-    Info: Total cell delay = 3.673 ns ( 33.34 % )
-    Info: Total interconnect delay = 7.345 ns ( 66.66 % )
-Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 212 megabytes
-    Info: Processing ended: Tue Oct 23 20:25:49 2018
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Longest tpd from source pin "Vetor2Subtrador[1]" to destination pin "Overflow" is 9.791 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.810 ns) = 0.810 ns; Loc. = PIN_U17; Fanout = 4; PIN Node = 'Vetor2Subtrador[1]'
+    Info: 2: + IC(4.030 ns) + CELL(0.366 ns) = 5.206 ns; Loc. = LCCOMB_X18_Y4_N0; Fanout = 2; COMB Node = 'Complemento:inst|FullAdder:inst1|inst10'
+    Info: 3: + IC(0.276 ns) + CELL(0.346 ns) = 5.828 ns; Loc. = LCCOMB_X18_Y4_N24; Fanout = 1; COMB Node = 'inst2'
+    Info: 4: + IC(1.809 ns) + CELL(2.154 ns) = 9.791 ns; Loc. = PIN_T2; Fanout = 0; PIN Node = 'Overflow'
+    Info: Total cell delay = 3.676 ns ( 37.54 % )
+    Info: Total interconnect delay = 6.115 ns ( 62.46 % )
+Info: Quartus II 64-Bit Classic Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 291 megabytes
+    Info: Processing ended: Wed Oct 24 15:19:38 2018
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

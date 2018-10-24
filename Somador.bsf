@@ -44,6 +44,13 @@ applicable agreement for further details.
 		(text "SaidaSomador[3..0]" (rect 149 27 259 41)(font "Arial" (font_size 8)))
 		(line (pt 280 32)(pt 264 32)(line_width 3))
 	)
+	(port
+		(pt 280 48)
+		(output)
+		(text "Overflow" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "Overflow" (rect 205 43 259 57)(font "Arial" (font_size 8)))
+		(line (pt 280 48)(pt 264 48)(line_width 1))
+	)
 	(drawing
 		(rectangle (rect 16 16 264 80)(line_width 1))
 	)

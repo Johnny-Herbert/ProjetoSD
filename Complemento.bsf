@@ -37,6 +37,13 @@ applicable agreement for further details.
 		(text "SaidaComplemento[3..0]" (rect 180 27 315 41)(font "Arial" (font_size 8)))
 		(line (pt 336 32)(pt 320 32)(line_width 3))
 	)
+	(port
+		(pt 336 48)
+		(output)
+		(text "Overflow" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "Overflow" (rect 261 43 315 57)(font "Arial" (font_size 8)))
+		(line (pt 336 48)(pt 320 48)(line_width 1))
+	)
 	(drawing
 		(rectangle (rect 16 16 320 80)(line_width 1))
 	)

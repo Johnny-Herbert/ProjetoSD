@@ -1,7 +1,7 @@
-Quartus II
-Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+Quartus II 64-Bit
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 7
-3666
+3700
 OFF
 OFF
 OFF
@@ -20,18 +20,21 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-Subtrador
+Somador
 # storage
 db|ProjetoSD.(0).cnf
 db|ProjetoSD.(0).cnf
 # case_insensitive
 # source_file
-subtrador.bdf
-d53f46c82896cfdd6fab989617b9a42
+somador.bdf
+17426860ebb62edd975cab2a84f7c00
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
+}
+# hierarchies {
+Somador:inst1
 }
 # macro_sequence
 
@@ -39,8 +42,8 @@ AUTO
 # entity
 FullAdder
 # storage
-db|ProjetoSD.(2).cnf
-db|ProjetoSD.(2).cnf
+db|ProjetoSD.(1).cnf
+db|ProjetoSD.(1).cnf
 # case_insensitive
 # source_file
 fulladder.bdf
@@ -51,10 +54,14 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-FullAdder:inst4
-FullAdder:inst5
-FullAdder:inst6
-FullAdder:inst
+Somador:inst1|FullAdder:inst4
+Somador:inst1|FullAdder:inst5
+Somador:inst1|FullAdder:inst6
+Somador:inst1|FullAdder:inst
+Complemento:inst|FullAdder:inst1
+Complemento:inst|FullAdder:inst2
+Complemento:inst|FullAdder:inst3
+Complemento:inst|FullAdder:inst
 }
 # macro_sequence
 
@@ -62,29 +69,32 @@ FullAdder:inst
 # entity
 Complemento
 # storage
-db|ProjetoSD.(3).cnf
-db|ProjetoSD.(3).cnf
+db|ProjetoSD.(2).cnf
+db|ProjetoSD.(2).cnf
 # case_insensitive
 # source_file
 complemento.bdf
-2b238f38d39f98b6628f468028d1bc37
+88c3374c346a7b17a78bf24b7ba9d8f
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# hierarchies {
+Complemento:inst
+}
 # macro_sequence
 
 # end
 # entity
-Somador
+Subtrador
 # storage
-db|ProjetoSD.(1).cnf
-db|ProjetoSD.(1).cnf
+db|ProjetoSD.(3).cnf
+db|ProjetoSD.(3).cnf
 # case_insensitive
 # source_file
-somador.bdf
-17426860ebb62edd975cab2a84f7c00
+subtrador.bdf
+99b5b7d71bf51ee4588a1e2c0a61a56
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
