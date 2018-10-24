@@ -1,6 +1,6 @@
 Simulator report for ProjetoSD
-Wed Oct 24 15:29:47 2018
-Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Wed Oct 24 16:55:55 2018
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
 ---------------------
@@ -22,7 +22,7 @@ Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Versio
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2010 Altera Corporation
+Copyright (C) 1991-2009 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -45,48 +45,48 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 59 nodes     ;
+; Simulation Netlist Size     ; 16 nodes     ;
 ; Simulation Coverage         ;     100.00 % ;
-; Total Number of Transitions ; 12472        ;
+; Total Number of Transitions ; 2090         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                         ;
-+--------------------------------------------------------------------------------------------+---------------+---------------+
-; Option                                                                                     ; Setting       ; Default Value ;
-+--------------------------------------------------------------------------------------------+---------------+---------------+
-; Simulation mode                                                                            ; Functional    ; Timing        ;
-; Start time                                                                                 ; 0 ns          ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF          ;               ;
-; Vector input source                                                                        ; Subtrador.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On            ; On            ;
-; Check outputs                                                                              ; Off           ; Off           ;
-; Report simulation coverage                                                                 ; On            ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On            ; On            ;
-; Display missing 1-value coverage report                                                    ; On            ; On            ;
-; Display missing 0-value coverage report                                                    ; On            ; On            ;
-; Detect setup and hold time violations                                                      ; Off           ; Off           ;
-; Detect glitches                                                                            ; Off           ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off           ; Off           ;
-; Generate Signal Activity File                                                              ; Off           ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off           ; Off           ;
-; Group bus channels in simulation results                                                   ; Off           ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On            ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE    ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off           ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off           ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto          ; Auto          ;
-+--------------------------------------------------------------------------------------------+---------------+---------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                             ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Option                                                                                     ; Setting           ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Simulation mode                                                                            ; Functional        ; Timing        ;
+; Start time                                                                                 ; 0 ns              ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF              ;               ;
+; Vector input source                                                                        ; ComparadorAnd.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                ; On            ;
+; Check outputs                                                                              ; Off               ; Off           ;
+; Report simulation coverage                                                                 ; On                ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                ; On            ;
+; Display missing 1-value coverage report                                                    ; On                ; On            ;
+; Display missing 0-value coverage report                                                    ; On                ; On            ;
+; Detect setup and hold time violations                                                      ; Off               ; Off           ;
+; Detect glitches                                                                            ; Off               ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off               ; Off           ;
+; Generate Signal Activity File                                                              ; Off               ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off               ; Off           ;
+; Group bus channels in simulation results                                                   ; Off               ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE        ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off               ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto              ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
 
 
 +----------------------+
 ; Simulation Waveforms ;
 +----------------------+
 Waveform report data cannot be output to ASCII.
-Please use Quartus II 64-Bit to view the waveform report data.
+Please use Quartus II to view the waveform report data.
 
 
 +--------------------------------------------------------------------+
@@ -95,9 +95,9 @@ Please use Quartus II 64-Bit to view the waveform report data.
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
 ; Total coverage as a percentage                      ;     100.00 % ;
-; Total nodes checked                                 ; 59           ;
-; Total output ports checked                          ; 59           ;
-; Total output ports with complete 1/0-value coverage ; 59           ;
+; Total nodes checked                                 ; 16           ;
+; Total output ports checked                          ; 16           ;
+; Total output ports with complete 1/0-value coverage ; 16           ;
 ; Total output ports with no 1/0-value coverage       ; 0            ;
 ; Total output ports with no 1-value coverage         ; 0            ;
 ; Total output ports with no 0-value coverage         ; 0            ;
@@ -105,71 +105,28 @@ Please use Quartus II 64-Bit to view the waveform report data.
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+----------------------------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                                                ;
-+----------------------------------------------------+----------------------------------------------------+------------------+
-; Node Name                                          ; Output Port Name                                   ; Output Port Type ;
-+----------------------------------------------------+----------------------------------------------------+------------------+
-; |Subtrador|Overflow                                ; |Subtrador|Overflow                                ; pin_out          ;
-; |Subtrador|inst2                                   ; |Subtrador|inst2                                   ; out0             ;
-; |Subtrador|Vetor1Subtrador[3]                      ; |Subtrador|Vetor1Subtrador[3]                      ; out              ;
-; |Subtrador|Vetor1Subtrador[2]                      ; |Subtrador|Vetor1Subtrador[2]                      ; out              ;
-; |Subtrador|Vetor1Subtrador[1]                      ; |Subtrador|Vetor1Subtrador[1]                      ; out              ;
-; |Subtrador|Vetor1Subtrador[0]                      ; |Subtrador|Vetor1Subtrador[0]                      ; out              ;
-; |Subtrador|Vetor2Subtrador[3]                      ; |Subtrador|Vetor2Subtrador[3]                      ; out              ;
-; |Subtrador|Vetor2Subtrador[2]                      ; |Subtrador|Vetor2Subtrador[2]                      ; out              ;
-; |Subtrador|Vetor2Subtrador[1]                      ; |Subtrador|Vetor2Subtrador[1]                      ; out              ;
-; |Subtrador|Vetor2Subtrador[0]                      ; |Subtrador|Vetor2Subtrador[0]                      ; out              ;
-; |Subtrador|SaidaSubtrador[3]                       ; |Subtrador|SaidaSubtrador[3]                       ; pin_out          ;
-; |Subtrador|SaidaSubtrador[2]                       ; |Subtrador|SaidaSubtrador[2]                       ; pin_out          ;
-; |Subtrador|SaidaSubtrador[1]                       ; |Subtrador|SaidaSubtrador[1]                       ; pin_out          ;
-; |Subtrador|SaidaSubtrador[0]                       ; |Subtrador|SaidaSubtrador[0]                       ; pin_out          ;
-; |Subtrador|Complemento:inst|inst13                 ; |Subtrador|Complemento:inst|inst13                 ; out0             ;
-; |Subtrador|Complemento:inst|FullAdder:inst|inst4   ; |Subtrador|Complemento:inst|FullAdder:inst|inst4   ; out0             ;
-; |Subtrador|Complemento:inst|FullAdder:inst|inst5   ; |Subtrador|Complemento:inst|FullAdder:inst|inst5   ; out0             ;
-; |Subtrador|Complemento:inst|FullAdder:inst|inst6   ; |Subtrador|Complemento:inst|FullAdder:inst|inst6   ; out0             ;
-; |Subtrador|Complemento:inst|FullAdder:inst|inst10  ; |Subtrador|Complemento:inst|FullAdder:inst|inst10  ; out0             ;
-; |Subtrador|Complemento:inst|FullAdder:inst2|inst4  ; |Subtrador|Complemento:inst|FullAdder:inst2|inst4  ; out0             ;
-; |Subtrador|Complemento:inst|FullAdder:inst2|inst5  ; |Subtrador|Complemento:inst|FullAdder:inst2|inst5  ; out0             ;
-; |Subtrador|Complemento:inst|FullAdder:inst2|inst6  ; |Subtrador|Complemento:inst|FullAdder:inst2|inst6  ; out0             ;
-; |Subtrador|Complemento:inst|FullAdder:inst2|inst10 ; |Subtrador|Complemento:inst|FullAdder:inst2|inst10 ; out0             ;
-; |Subtrador|Complemento:inst|FullAdder:inst1|inst4  ; |Subtrador|Complemento:inst|FullAdder:inst1|inst4  ; out0             ;
-; |Subtrador|Complemento:inst|FullAdder:inst1|inst5  ; |Subtrador|Complemento:inst|FullAdder:inst1|inst5  ; out0             ;
-; |Subtrador|Complemento:inst|FullAdder:inst1|inst6  ; |Subtrador|Complemento:inst|FullAdder:inst1|inst6  ; out0             ;
-; |Subtrador|Complemento:inst|FullAdder:inst1|inst10 ; |Subtrador|Complemento:inst|FullAdder:inst1|inst10 ; out0             ;
-; |Subtrador|Somador:inst1|inst1                     ; |Subtrador|Somador:inst1|inst1                     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst|inst4      ; |Subtrador|Somador:inst1|FullAdder:inst|inst4      ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst|inst5      ; |Subtrador|Somador:inst1|FullAdder:inst|inst5      ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst|inst7      ; |Subtrador|Somador:inst1|FullAdder:inst|inst7      ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst|inst8      ; |Subtrador|Somador:inst1|FullAdder:inst|inst8      ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst|inst6      ; |Subtrador|Somador:inst1|FullAdder:inst|inst6      ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst|inst13     ; |Subtrador|Somador:inst1|FullAdder:inst|inst13     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst|inst11     ; |Subtrador|Somador:inst1|FullAdder:inst|inst11     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst|inst12     ; |Subtrador|Somador:inst1|FullAdder:inst|inst12     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst|inst10     ; |Subtrador|Somador:inst1|FullAdder:inst|inst10     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst6|inst4     ; |Subtrador|Somador:inst1|FullAdder:inst6|inst4     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst6|inst5     ; |Subtrador|Somador:inst1|FullAdder:inst6|inst5     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst6|inst8     ; |Subtrador|Somador:inst1|FullAdder:inst6|inst8     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst6|inst12    ; |Subtrador|Somador:inst1|FullAdder:inst6|inst12    ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst5|inst4     ; |Subtrador|Somador:inst1|FullAdder:inst5|inst4     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst5|inst5     ; |Subtrador|Somador:inst1|FullAdder:inst5|inst5     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst5|inst7     ; |Subtrador|Somador:inst1|FullAdder:inst5|inst7     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst5|inst8     ; |Subtrador|Somador:inst1|FullAdder:inst5|inst8     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst5|inst6     ; |Subtrador|Somador:inst1|FullAdder:inst5|inst6     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst5|inst13    ; |Subtrador|Somador:inst1|FullAdder:inst5|inst13    ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst5|inst11    ; |Subtrador|Somador:inst1|FullAdder:inst5|inst11    ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst5|inst12    ; |Subtrador|Somador:inst1|FullAdder:inst5|inst12    ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst5|inst10    ; |Subtrador|Somador:inst1|FullAdder:inst5|inst10    ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst4|inst4     ; |Subtrador|Somador:inst1|FullAdder:inst4|inst4     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst4|inst5     ; |Subtrador|Somador:inst1|FullAdder:inst4|inst5     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst4|inst7     ; |Subtrador|Somador:inst1|FullAdder:inst4|inst7     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst4|inst8     ; |Subtrador|Somador:inst1|FullAdder:inst4|inst8     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst4|inst6     ; |Subtrador|Somador:inst1|FullAdder:inst4|inst6     ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst4|inst13    ; |Subtrador|Somador:inst1|FullAdder:inst4|inst13    ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst4|inst11    ; |Subtrador|Somador:inst1|FullAdder:inst4|inst11    ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst4|inst12    ; |Subtrador|Somador:inst1|FullAdder:inst4|inst12    ; out0             ;
-; |Subtrador|Somador:inst1|FullAdder:inst4|inst10    ; |Subtrador|Somador:inst1|FullAdder:inst4|inst10    ; out0             ;
-+----------------------------------------------------+----------------------------------------------------+------------------+
++----------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                    ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |ComparadorAnd|S[3]  ; |ComparadorAnd|S[3]  ; pin_out          ;
+; |ComparadorAnd|S[2]  ; |ComparadorAnd|S[2]  ; pin_out          ;
+; |ComparadorAnd|S[1]  ; |ComparadorAnd|S[1]  ; pin_out          ;
+; |ComparadorAnd|S[0]  ; |ComparadorAnd|S[0]  ; pin_out          ;
+; |ComparadorAnd|inst3 ; |ComparadorAnd|inst3 ; out0             ;
+; |ComparadorAnd|B[3]  ; |ComparadorAnd|B[3]  ; out              ;
+; |ComparadorAnd|B[2]  ; |ComparadorAnd|B[2]  ; out              ;
+; |ComparadorAnd|B[1]  ; |ComparadorAnd|B[1]  ; out              ;
+; |ComparadorAnd|B[0]  ; |ComparadorAnd|B[0]  ; out              ;
+; |ComparadorAnd|A[3]  ; |ComparadorAnd|A[3]  ; out              ;
+; |ComparadorAnd|A[2]  ; |ComparadorAnd|A[2]  ; out              ;
+; |ComparadorAnd|A[1]  ; |ComparadorAnd|A[1]  ; out              ;
+; |ComparadorAnd|A[0]  ; |ComparadorAnd|A[0]  ; out              ;
+; |ComparadorAnd|inst2 ; |ComparadorAnd|inst2 ; out0             ;
+; |ComparadorAnd|inst1 ; |ComparadorAnd|inst1 ; out0             ;
+; |ComparadorAnd|inst  ; |ComparadorAnd|inst  ; out0             ;
++----------------------+----------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
@@ -199,20 +156,20 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; Simulator Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Simulator
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Wed Oct 24 15:29:47 2018
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Wed Oct 24 16:55:55 2018
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ProjetoSD -c ProjetoSD
-Info: Using vector source file "D:/Users/jhmn/Desktop/ProjetoSD/Subtrador.vwf"
+Info: Using vector source file "E:/Graduacao/ProjetoSD/ComparadorAnd.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is     100.00 %
-Info: Number of transitions in simulation is 12472
-Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 233 megabytes
-    Info: Processing ended: Wed Oct 24 15:29:47 2018
-    Info: Elapsed time: 00:00:00
+Info: Number of transitions in simulation is 2090
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 173 megabytes
+    Info: Processing ended: Wed Oct 24 16:55:56 2018
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

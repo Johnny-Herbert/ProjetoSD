@@ -38,20 +38,36 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY Subtrador
+set_global_assignment -name TOP_LEVEL_ENTITY ComparadorAnd
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:40:45  OCTOBER 11, 2018"
-set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.1
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
-set_global_assignment -name BDF_FILE Complemento.bdf
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name LL_ROOT_REGION ON -entity ProjetoSD -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -entity ProjetoSD -section_id "Root Region"
-set_global_assignment -name VECTOR_WAVEFORM_FILE Complemento.vwf
 set_global_assignment -name EDA_BOARD_DESIGN_BOUNDARY_SCAN_TOOL "BSDL (Boundary Scan)"
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/altera/91sp1/quartus/ProjetoSD" -section_id eda_board_design_boundary_scan
 set_global_assignment -name EDA_BOARD_BOUNDARY_SCAN_OPERATION POST_CONFIG -section_id eda_board_design_boundary_scan
+set_global_assignment -name VECTOR_WAVEFORM_FILE ComparadorAnd.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ComparadorXor.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ComparadorMaiorQVetor.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ComparadorMenorQVetor.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Igualdade1Bit.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Igualdade4Bits.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE MaiorQ1bit.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE MaiorQSignificativo.vwf
+set_global_assignment -name BDF_FILE ComparadorMaiorQVetor.bdf
+set_global_assignment -name BDF_FILE ComparadorMenorQVetor.bdf
+set_global_assignment -name BDF_FILE Igualdade1Bit.bdf
+set_global_assignment -name BDF_FILE Igualdade4Bits.bdf
+set_global_assignment -name BDF_FILE MaiorQ1bit.bdf
+set_global_assignment -name BDF_FILE MaiorQSignificativo.bdf
+set_global_assignment -name BDF_FILE ComparadorAnd.bdf
+set_global_assignment -name BDF_FILE ComparadorXor.bdf
+set_global_assignment -name BDF_FILE Complemento.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Complemento.vwf
 set_global_assignment -name BDF_FILE TesteBlock.bdf
 set_global_assignment -name BDF_FILE FullAdder.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE FullAdder.vwf
@@ -63,5 +79,6 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE ComparadorAnd.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Subtrador.vwf
+set_global_assignment -name BDF_FILE Mux.bdf
