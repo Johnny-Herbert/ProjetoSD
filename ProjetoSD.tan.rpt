@@ -1,6 +1,6 @@
 Classic Timing Analyzer report for ProjetoSD
-Wed Oct 24 16:54:55 2018
-Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+Thu Oct 25 19:32:12 2018
+Quartus II Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -18,7 +18,7 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2009 Altera Corporation
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -34,14 +34,14 @@ applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                                                                 ;
-+------------------------------+-------+---------------+-------------+------+------+------------+----------+--------------+
-; Type                         ; Slack ; Required Time ; Actual Time ; From ; To   ; From Clock ; To Clock ; Failed Paths ;
-+------------------------------+-------+---------------+-------------+------+------+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 8.837 ns    ; A[1] ; S[1] ; --         ; --       ; 0            ;
-; Total number of failed paths ;       ;               ;             ;      ;      ;            ;          ; 0            ;
-+------------------------------+-------+---------------+-------------+------+------+------------+----------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                     ;
++------------------------------+-------+---------------+-------------+------+----------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From ; To       ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+------+----------+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 10.537 ns   ; A[1] ; Overflow ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;      ;          ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+------+----------+------------+----------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -87,20 +87,54 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------+
-; tpd                                                       ;
-+-------+-------------------+-----------------+------+------+
-; Slack ; Required P2P Time ; Actual P2P Time ; From ; To   ;
-+-------+-------------------+-----------------+------+------+
-; N/A   ; None              ; 8.837 ns        ; A[1] ; S[1] ;
-; N/A   ; None              ; 8.644 ns        ; B[0] ; S[0] ;
-; N/A   ; None              ; 8.175 ns        ; A[3] ; S[3] ;
-; N/A   ; None              ; 8.153 ns        ; B[1] ; S[1] ;
-; N/A   ; None              ; 7.651 ns        ; A[2] ; S[2] ;
-; N/A   ; None              ; 7.627 ns        ; B[3] ; S[3] ;
-; N/A   ; None              ; 7.392 ns        ; A[0] ; S[0] ;
-; N/A   ; None              ; 7.155 ns        ; B[2] ; S[2] ;
-+-------+-------------------+-----------------+------+------+
++-----------------------------------------------------------------+
+; tpd                                                             ;
++-------+-------------------+-----------------+------+------------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From ; To         ;
++-------+-------------------+-----------------+------+------------+
+; N/A   ; None              ; 10.537 ns       ; A[1] ; Overflow   ;
+; N/A   ; None              ; 10.506 ns       ; A[1] ; Dezena     ;
+; N/A   ; None              ; 10.501 ns       ; A[3] ; Overflow   ;
+; N/A   ; None              ; 10.480 ns       ; B[0] ; Overflow   ;
+; N/A   ; None              ; 10.450 ns       ; A[0] ; Overflow   ;
+; N/A   ; None              ; 10.449 ns       ; B[0] ; Dezena     ;
+; N/A   ; None              ; 10.439 ns       ; A[2] ; Overflow   ;
+; N/A   ; None              ; 10.423 ns       ; A[0] ; Dezena     ;
+; N/A   ; None              ; 10.402 ns       ; A[3] ; Dezena     ;
+; N/A   ; None              ; 10.386 ns       ; A[2] ; Dezena     ;
+; N/A   ; None              ; 10.367 ns       ; B[2] ; Overflow   ;
+; N/A   ; None              ; 10.323 ns       ; B[1] ; Overflow   ;
+; N/A   ; None              ; 10.312 ns       ; B[1] ; Dezena     ;
+; N/A   ; None              ; 10.301 ns       ; B[2] ; Dezena     ;
+; N/A   ; None              ; 10.278 ns       ; B[3] ; Overflow   ;
+; N/A   ; None              ; 10.179 ns       ; B[3] ; Dezena     ;
+; N/A   ; None              ; 10.092 ns       ; A[1] ; Unidade[1] ;
+; N/A   ; None              ; 10.038 ns       ; A[1] ; Unidade[2] ;
+; N/A   ; None              ; 10.035 ns       ; B[0] ; Unidade[1] ;
+; N/A   ; None              ; 10.029 ns       ; A[1] ; Unidade[3] ;
+; N/A   ; None              ; 10.011 ns       ; A[0] ; Unidade[1] ;
+; N/A   ; None              ; 9.990 ns        ; A[3] ; Unidade[1] ;
+; N/A   ; None              ; 9.981 ns        ; B[0] ; Unidade[2] ;
+; N/A   ; None              ; 9.972 ns        ; A[2] ; Unidade[1] ;
+; N/A   ; None              ; 9.972 ns        ; B[0] ; Unidade[3] ;
+; N/A   ; None              ; 9.951 ns        ; A[0] ; Unidade[2] ;
+; N/A   ; None              ; 9.942 ns        ; A[0] ; Unidade[3] ;
+; N/A   ; None              ; 9.935 ns        ; A[3] ; Unidade[2] ;
+; N/A   ; None              ; 9.924 ns        ; A[3] ; Unidade[3] ;
+; N/A   ; None              ; 9.918 ns        ; A[2] ; Unidade[2] ;
+; N/A   ; None              ; 9.909 ns        ; A[2] ; Unidade[3] ;
+; N/A   ; None              ; 9.900 ns        ; B[1] ; Unidade[1] ;
+; N/A   ; None              ; 9.887 ns        ; B[2] ; Unidade[1] ;
+; N/A   ; None              ; 9.833 ns        ; B[2] ; Unidade[2] ;
+; N/A   ; None              ; 9.824 ns        ; B[1] ; Unidade[2] ;
+; N/A   ; None              ; 9.824 ns        ; B[2] ; Unidade[3] ;
+; N/A   ; None              ; 9.815 ns        ; B[1] ; Unidade[3] ;
+; N/A   ; None              ; 9.767 ns        ; B[3] ; Unidade[1] ;
+; N/A   ; None              ; 9.712 ns        ; B[3] ; Unidade[2] ;
+; N/A   ; None              ; 9.701 ns        ; B[3] ; Unidade[3] ;
+; N/A   ; None              ; 8.840 ns        ; A[0] ; Unidade[0] ;
+; N/A   ; None              ; 8.629 ns        ; B[0] ; Unidade[0] ;
++-------+-------------------+-----------------+------+------------+
 
 
 +--------------------------+
@@ -108,19 +142,22 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
-    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Wed Oct 24 16:54:55 2018
+    Info: Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Oct 25 19:32:12 2018
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off ProjetoSD -c ProjetoSD --timing_analysis_only
-Info: Longest tpd from source pin "A[1]" to destination pin "S[1]" is 8.837 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.799 ns) = 0.799 ns; Loc. = PIN_W9; Fanout = 1; PIN Node = 'A[1]'
-    Info: 2: + IC(4.823 ns) + CELL(0.357 ns) = 5.979 ns; Loc. = LCCOMB_X31_Y20_N16; Fanout = 1; COMB Node = 'inst2'
-    Info: 3: + IC(0.876 ns) + CELL(1.982 ns) = 8.837 ns; Loc. = PIN_B6; Fanout = 0; PIN Node = 'S[1]'
-    Info: Total cell delay = 3.138 ns ( 35.51 % )
-    Info: Total interconnect delay = 5.699 ns ( 64.49 % )
+Info: Longest tpd from source pin "A[1]" to destination pin "Overflow" is 10.537 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.837 ns) = 0.837 ns; Loc. = PIN_Y14; Fanout = 2; PIN Node = 'A[1]'
+    Info: 2: + IC(4.748 ns) + CELL(0.309 ns) = 5.894 ns; Loc. = LCCOMB_X19_Y15_N2; Fanout = 2; COMB Node = 'FullAdder:inst2|inst4~6'
+    Info: 3: + IC(0.000 ns) + CELL(0.035 ns) = 5.929 ns; Loc. = LCCOMB_X19_Y15_N4; Fanout = 2; COMB Node = 'FullAdder:inst2|inst4~10'
+    Info: 4: + IC(0.000 ns) + CELL(0.035 ns) = 5.964 ns; Loc. = LCCOMB_X19_Y15_N6; Fanout = 1; COMB Node = 'FullAdder:inst2|inst4~14'
+    Info: 5: + IC(0.000 ns) + CELL(0.125 ns) = 6.089 ns; Loc. = LCCOMB_X19_Y15_N8; Fanout = 5; COMB Node = 'FullAdder:inst2|inst4~17'
+    Info: 6: + IC(2.314 ns) + CELL(2.134 ns) = 10.537 ns; Loc. = PIN_U4; Fanout = 0; PIN Node = 'Overflow'
+    Info: Total cell delay = 3.475 ns ( 32.98 % )
+    Info: Total interconnect delay = 7.062 ns ( 67.02 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 212 megabytes
-    Info: Processing ended: Wed Oct 24 16:54:55 2018
+    Info: Processing ended: Thu Oct 25 19:32:12 2018
     Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -1,0 +1,137 @@
+|SomadorBCD
+Dezena <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => FullAdder:inst3.bitA
+A[1] => FullAdder:inst2.bitA
+A[2] => FullAdder:inst1.bitA
+A[3] => FullAdder:inst.bitA
+B[0] => FullAdder:inst3.bitB
+B[1] => FullAdder:inst2.bitB
+B[2] => FullAdder:inst1.bitB
+B[3] => FullAdder:inst.bitB
+Overflow <= FullAdder:inst.CarryOut
+Unidade[0] <= FullAdder:inst3.Resultado
+Unidade[1] <= FullAdder:inst7.Resultado
+Unidade[2] <= FullAdder:inst6.Resultado
+Unidade[3] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SomadorBCD|FullAdder:inst
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SomadorBCD|FullAdder:inst1
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SomadorBCD|FullAdder:inst2
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SomadorBCD|FullAdder:inst3
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SomadorBCD|FullAdder:inst6
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SomadorBCD|FullAdder:inst7
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+

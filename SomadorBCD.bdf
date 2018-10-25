@@ -85,6 +85,23 @@ applicable agreement for further details.
 	)
 	(rotate180)
 )
+(pin
+	(output)
+	(rect 88 440 264 456)
+	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
+	(text "Overflow" (rect 5 4 49 16)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 176 8)(pt 124 8)(line_width 1))
+		(line (pt 124 12)(pt 98 12)(line_width 1))
+		(line (pt 124 4)(pt 98 4)(line_width 1))
+		(line (pt 124 4)(pt 124 12)(line_width 1))
+		(line (pt 98 12)(pt 94 8)(line_width 1))
+		(line (pt 94 8)(pt 98 4)(line_width 1))
+		(line (pt 98 4)(pt 94 8)(line_width 1))
+	)
+	(rotate180)
+)
 (symbol
 	(rect 384 112 480 264)
 	(text "FullAdder" (rect 82 5 96 59)(font "Arial" (font_size 8))(vertical))
@@ -730,10 +747,6 @@ applicable agreement for further details.
 	(pt 432 272)
 )
 (connector
-	(pt 296 272)
-	(pt 296 480)
-)
-(connector
 	(pt 304 304)
 	(pt 344 304)
 )
@@ -850,15 +863,6 @@ applicable agreement for further details.
 	(pt 304 560)
 )
 (connector
-	(pt 304 560)
-	(pt 304 624)
-)
-(connector
-	(pt 456 624)
-	(pt 592 624)
-	(bus)
-)
-(connector
 	(pt 592 624)
 	(pt 720 624)
 	(bus)
@@ -879,23 +883,44 @@ applicable agreement for further details.
 	(pt 832 624)
 )
 (connector
+	(pt 280 624)
+	(pt 304 624)
+)
+(connector
+	(pt 304 560)
+	(pt 304 624)
+)
+(connector
+	(text "Unidade[2]" (rect 576 569 588 622)(font "Arial" )(vertical))
+	(pt 592 520)
+	(pt 592 624)
+)
+(connector
+	(text "Unidade[3]" (rect 440 569 452 622)(font "Arial" )(vertical))
+	(pt 456 544)
+	(pt 456 624)
+)
+(connector
 	(text "Unidade[1]" (rect 704 569 716 622)(font "Arial" )(vertical))
 	(pt 720 520)
 	(pt 720 624)
 )
 (connector
-	(text "Unidade[2]" (rect 576 569 588 622)(font "Arial" )(vertical))
-	(pt 592 624)
-	(pt 592 520)
-)
-(connector
-	(text "Unidade[3]" (rect 440 569 452 622)(font "Arial" )(vertical))
 	(pt 456 624)
-	(pt 456 544)
+	(pt 592 624)
+	(bus)
 )
 (connector
-	(pt 304 624)
-	(pt 280 624)
+	(pt 264 448)
+	(pt 296 448)
+)
+(connector
+	(pt 296 272)
+	(pt 296 448)
+)
+(connector
+	(pt 296 448)
+	(pt 296 480)
 )
 (junction (pt 432 -48))
 (junction (pt 416 8))
@@ -914,3 +939,4 @@ applicable agreement for further details.
 (junction (pt 592 624))
 (junction (pt 720 624))
 (junction (pt 832 624))
+(junction (pt 296 448))
