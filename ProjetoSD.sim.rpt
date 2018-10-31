@@ -1,5 +1,5 @@
 Simulator report for ProjetoSD
-Wed Oct 24 16:55:55 2018
+Wed Oct 31 00:45:21 2018
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -45,41 +45,41 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 16 nodes     ;
-; Simulation Coverage         ;     100.00 % ;
-; Total Number of Transitions ; 2090         ;
+; Simulation Netlist Size     ; 75 nodes     ;
+; Simulation Coverage         ;      66.67 % ;
+; Total Number of Transitions ; 3215         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                             ;
-+--------------------------------------------------------------------------------------------+-------------------+---------------+
-; Option                                                                                     ; Setting           ; Default Value ;
-+--------------------------------------------------------------------------------------------+-------------------+---------------+
-; Simulation mode                                                                            ; Functional        ; Timing        ;
-; Start time                                                                                 ; 0 ns              ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF              ;               ;
-; Vector input source                                                                        ; ComparadorAnd.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                ; On            ;
-; Check outputs                                                                              ; Off               ; Off           ;
-; Report simulation coverage                                                                 ; On                ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                ; On            ;
-; Display missing 1-value coverage report                                                    ; On                ; On            ;
-; Display missing 0-value coverage report                                                    ; On                ; On            ;
-; Detect setup and hold time violations                                                      ; Off               ; Off           ;
-; Detect glitches                                                                            ; Off               ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off               ; Off           ;
-; Generate Signal Activity File                                                              ; Off               ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off               ; Off           ;
-; Group bus channels in simulation results                                                   ; Off               ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE        ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off               ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off               ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto              ; Auto          ;
-+--------------------------------------------------------------------------------------------+-------------------+---------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; Mux4.vwf   ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
 
 
 +----------------------+
@@ -94,55 +94,136 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;     100.00 % ;
-; Total nodes checked                                 ; 16           ;
-; Total output ports checked                          ; 16           ;
-; Total output ports with complete 1/0-value coverage ; 16           ;
-; Total output ports with no 1/0-value coverage       ; 0            ;
-; Total output ports with no 1-value coverage         ; 0            ;
-; Total output ports with no 0-value coverage         ; 0            ;
+; Total coverage as a percentage                      ;      66.67 % ;
+; Total nodes checked                                 ; 75           ;
+; Total output ports checked                          ; 75           ;
+; Total output ports with complete 1/0-value coverage ; 50           ;
+; Total output ports with no 1/0-value coverage       ; 20           ;
+; Total output ports with no 1-value coverage         ; 20           ;
+; Total output ports with no 0-value coverage         ; 25           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+----------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                    ;
-+----------------------+----------------------+------------------+
-; Node Name            ; Output Port Name     ; Output Port Type ;
-+----------------------+----------------------+------------------+
-; |ComparadorAnd|S[3]  ; |ComparadorAnd|S[3]  ; pin_out          ;
-; |ComparadorAnd|S[2]  ; |ComparadorAnd|S[2]  ; pin_out          ;
-; |ComparadorAnd|S[1]  ; |ComparadorAnd|S[1]  ; pin_out          ;
-; |ComparadorAnd|S[0]  ; |ComparadorAnd|S[0]  ; pin_out          ;
-; |ComparadorAnd|inst3 ; |ComparadorAnd|inst3 ; out0             ;
-; |ComparadorAnd|B[3]  ; |ComparadorAnd|B[3]  ; out              ;
-; |ComparadorAnd|B[2]  ; |ComparadorAnd|B[2]  ; out              ;
-; |ComparadorAnd|B[1]  ; |ComparadorAnd|B[1]  ; out              ;
-; |ComparadorAnd|B[0]  ; |ComparadorAnd|B[0]  ; out              ;
-; |ComparadorAnd|A[3]  ; |ComparadorAnd|A[3]  ; out              ;
-; |ComparadorAnd|A[2]  ; |ComparadorAnd|A[2]  ; out              ;
-; |ComparadorAnd|A[1]  ; |ComparadorAnd|A[1]  ; out              ;
-; |ComparadorAnd|A[0]  ; |ComparadorAnd|A[0]  ; out              ;
-; |ComparadorAnd|inst2 ; |ComparadorAnd|inst2 ; out0             ;
-; |ComparadorAnd|inst1 ; |ComparadorAnd|inst1 ; out0             ;
-; |ComparadorAnd|inst  ; |ComparadorAnd|inst  ; out0             ;
-+----------------------+----------------------+------------------+
++-------------------------------------------------------+
+; Complete 1/0-Value Coverage                           ;
++-----------------+------------------+------------------+
+; Node Name       ; Output Port Name ; Output Port Type ;
++-----------------+------------------+------------------+
+; |Mux4|S[3]      ; |Mux4|S[3]       ; pin_out          ;
+; |Mux4|S[2]      ; |Mux4|S[2]       ; pin_out          ;
+; |Mux4|S[1]      ; |Mux4|S[1]       ; pin_out          ;
+; |Mux4|S[0]      ; |Mux4|S[0]       ; pin_out          ;
+; |Mux4|inst22[3] ; |Mux4|inst22[3]  ; out0             ;
+; |Mux4|inst22[2] ; |Mux4|inst22[2]  ; out0             ;
+; |Mux4|inst22[1] ; |Mux4|inst22[1]  ; out0             ;
+; |Mux4|inst22[0] ; |Mux4|inst22[0]  ; out0             ;
+; |Mux4|C[2]      ; |Mux4|C[2]       ; out              ;
+; |Mux4|IN8[3]    ; |Mux4|IN8[3]     ; out              ;
+; |Mux4|IN6[1]    ; |Mux4|IN6[1]     ; out              ;
+; |Mux4|IN6[2]    ; |Mux4|IN6[2]     ; out              ;
+; |Mux4|IN6[3]    ; |Mux4|IN6[3]     ; out              ;
+; |Mux4|IN7[2]    ; |Mux4|IN7[2]     ; out              ;
+; |Mux4|IN7[3]    ; |Mux4|IN7[3]     ; out              ;
+; |Mux4|IN5[0]    ; |Mux4|IN5[0]     ; out              ;
+; |Mux4|IN5[1]    ; |Mux4|IN5[1]     ; out              ;
+; |Mux4|IN5[2]    ; |Mux4|IN5[2]     ; out              ;
+; |Mux4|IN5[3]    ; |Mux4|IN5[3]     ; out              ;
+; |Mux4|inst6[3]  ; |Mux4|inst6[3]   ; out0             ;
+; |Mux4|inst6[2]  ; |Mux4|inst6[2]   ; out0             ;
+; |Mux4|inst6[1]  ; |Mux4|inst6[1]   ; out0             ;
+; |Mux4|inst6[0]  ; |Mux4|inst6[0]   ; out0             ;
+; |Mux4|IN3[0]    ; |Mux4|IN3[0]     ; out              ;
+; |Mux4|IN3[1]    ; |Mux4|IN3[1]     ; out              ;
+; |Mux4|IN3[2]    ; |Mux4|IN3[2]     ; out              ;
+; |Mux4|IN3[3]    ; |Mux4|IN3[3]     ; out              ;
+; |Mux4|inst5[2]  ; |Mux4|inst5[2]   ; out0             ;
+; |Mux4|inst5[1]  ; |Mux4|inst5[1]   ; out0             ;
+; |Mux4|inst5[0]  ; |Mux4|inst5[0]   ; out0             ;
+; |Mux4|IN4[0]    ; |Mux4|IN4[0]     ; out              ;
+; |Mux4|IN4[1]    ; |Mux4|IN4[1]     ; out              ;
+; |Mux4|IN4[2]    ; |Mux4|IN4[2]     ; out              ;
+; |Mux4|IN4[3]    ; |Mux4|IN4[3]     ; out              ;
+; |Mux4|inst7[3]  ; |Mux4|inst7[3]   ; out0             ;
+; |Mux4|inst7[2]  ; |Mux4|inst7[2]   ; out0             ;
+; |Mux4|inst7[1]  ; |Mux4|inst7[1]   ; out0             ;
+; |Mux4|inst7[0]  ; |Mux4|inst7[0]   ; out0             ;
+; |Mux4|IN2[0]    ; |Mux4|IN2[0]     ; out              ;
+; |Mux4|IN2[1]    ; |Mux4|IN2[1]     ; out              ;
+; |Mux4|IN2[2]    ; |Mux4|IN2[2]     ; out              ;
+; |Mux4|IN2[3]    ; |Mux4|IN2[3]     ; out              ;
+; |Mux4|inst8[3]  ; |Mux4|inst8[3]   ; out0             ;
+; |Mux4|inst8[2]  ; |Mux4|inst8[2]   ; out0             ;
+; |Mux4|inst8[1]  ; |Mux4|inst8[1]   ; out0             ;
+; |Mux4|inst8[0]  ; |Mux4|inst8[0]   ; out0             ;
+; |Mux4|IN1[0]    ; |Mux4|IN1[0]     ; out              ;
+; |Mux4|IN1[1]    ; |Mux4|IN1[1]     ; out              ;
+; |Mux4|IN1[2]    ; |Mux4|IN1[2]     ; out              ;
+; |Mux4|IN1[3]    ; |Mux4|IN1[3]     ; out              ;
++-----------------+------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+-------------------------------------------------+
-; Missing 1-Value Coverage                        ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
++------------------------------------------------------+
+; Missing 1-Value Coverage                             ;
++----------------+------------------+------------------+
+; Node Name      ; Output Port Name ; Output Port Type ;
++----------------+------------------+------------------+
+; |Mux4|inst1[3] ; |Mux4|inst1[3]   ; out0             ;
+; |Mux4|inst1[2] ; |Mux4|inst1[2]   ; out0             ;
+; |Mux4|inst1[1] ; |Mux4|inst1[1]   ; out0             ;
+; |Mux4|inst1[0] ; |Mux4|inst1[0]   ; out0             ;
+; |Mux4|C[0]     ; |Mux4|C[0]       ; out              ;
+; |Mux4|IN8[0]   ; |Mux4|IN8[0]     ; out              ;
+; |Mux4|IN8[1]   ; |Mux4|IN8[1]     ; out              ;
+; |Mux4|inst3[3] ; |Mux4|inst3[3]   ; out0             ;
+; |Mux4|inst3[2] ; |Mux4|inst3[2]   ; out0             ;
+; |Mux4|inst3[1] ; |Mux4|inst3[1]   ; out0             ;
+; |Mux4|inst3[0] ; |Mux4|inst3[0]   ; out0             ;
+; |Mux4|inst2[3] ; |Mux4|inst2[3]   ; out0             ;
+; |Mux4|inst2[2] ; |Mux4|inst2[2]   ; out0             ;
+; |Mux4|inst2[1] ; |Mux4|inst2[1]   ; out0             ;
+; |Mux4|inst2[0] ; |Mux4|inst2[0]   ; out0             ;
+; |Mux4|IN7[0]   ; |Mux4|IN7[0]     ; out              ;
+; |Mux4|inst4[3] ; |Mux4|inst4[3]   ; out0             ;
+; |Mux4|inst4[2] ; |Mux4|inst4[2]   ; out0             ;
+; |Mux4|inst4[1] ; |Mux4|inst4[1]   ; out0             ;
+; |Mux4|inst4[0] ; |Mux4|inst4[0]   ; out0             ;
++----------------+------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+-------------------------------------------------+
-; Missing 0-Value Coverage                        ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
++------------------------------------------------------+
+; Missing 0-Value Coverage                             ;
++----------------+------------------+------------------+
+; Node Name      ; Output Port Name ; Output Port Type ;
++----------------+------------------+------------------+
+; |Mux4|inst1[3] ; |Mux4|inst1[3]   ; out0             ;
+; |Mux4|inst1[2] ; |Mux4|inst1[2]   ; out0             ;
+; |Mux4|inst1[1] ; |Mux4|inst1[1]   ; out0             ;
+; |Mux4|inst1[0] ; |Mux4|inst1[0]   ; out0             ;
+; |Mux4|C[0]     ; |Mux4|C[0]       ; out              ;
+; |Mux4|C[1]     ; |Mux4|C[1]       ; out              ;
+; |Mux4|IN8[0]   ; |Mux4|IN8[0]     ; out              ;
+; |Mux4|IN8[1]   ; |Mux4|IN8[1]     ; out              ;
+; |Mux4|IN8[2]   ; |Mux4|IN8[2]     ; out              ;
+; |Mux4|inst3[3] ; |Mux4|inst3[3]   ; out0             ;
+; |Mux4|inst3[2] ; |Mux4|inst3[2]   ; out0             ;
+; |Mux4|inst3[1] ; |Mux4|inst3[1]   ; out0             ;
+; |Mux4|inst3[0] ; |Mux4|inst3[0]   ; out0             ;
+; |Mux4|IN6[0]   ; |Mux4|IN6[0]     ; out              ;
+; |Mux4|inst2[3] ; |Mux4|inst2[3]   ; out0             ;
+; |Mux4|inst2[2] ; |Mux4|inst2[2]   ; out0             ;
+; |Mux4|inst2[1] ; |Mux4|inst2[1]   ; out0             ;
+; |Mux4|inst2[0] ; |Mux4|inst2[0]   ; out0             ;
+; |Mux4|IN7[0]   ; |Mux4|IN7[0]     ; out              ;
+; |Mux4|IN7[1]   ; |Mux4|IN7[1]     ; out              ;
+; |Mux4|inst4[3] ; |Mux4|inst4[3]   ; out0             ;
+; |Mux4|inst4[2] ; |Mux4|inst4[2]   ; out0             ;
+; |Mux4|inst4[1] ; |Mux4|inst4[1]   ; out0             ;
+; |Mux4|inst4[0] ; |Mux4|inst4[0]   ; out0             ;
+; |Mux4|inst5[3] ; |Mux4|inst5[3]   ; out0             ;
++----------------+------------------+------------------+
 
 
 +---------------------+
@@ -158,18 +239,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Wed Oct 24 16:55:55 2018
+    Info: Processing started: Wed Oct 31 00:45:20 2018
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ProjetoSD -c ProjetoSD
-Info: Using vector source file "E:/Graduacao/ProjetoSD/ComparadorAnd.vwf"
+Info: Using vector source file "E:/Graduacao/ProjetoSD/Mux4.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is     100.00 %
-Info: Number of transitions in simulation is 2090
+Info: Simulation coverage is      66.67 %
+Info: Number of transitions in simulation is 3215
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 173 megabytes
-    Info: Processing ended: Wed Oct 24 16:55:56 2018
+    Info: Processing ended: Wed Oct 31 00:45:21 2018
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

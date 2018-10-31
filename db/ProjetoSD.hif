@@ -101,6 +101,40 @@ comparadorand.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+Mux
+# storage
+db|ProjetoSD.(5).cnf
+db|ProjetoSD.(5).cnf
+# case_insensitive
+# source_file
+mux.bdf
+78ad47a65526e6cb862a1ad4b912f42
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Mux4
+# storage
+db|ProjetoSD.(6).cnf
+db|ProjetoSD.(6).cnf
+# case_insensitive
+# source_file
+mux4.bdf
+70ee52ac2ae9eba4af8f5adff9d250
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
 |
 }
