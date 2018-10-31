@@ -1,6 +1,11 @@
 Assembler report for ProjetoSD
+<<<<<<< HEAD
 Wed Oct 31 00:43:58 2018
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+=======
+Thu Oct 25 19:32:10 2018
+Quartus II Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+>>>>>>> 5cc65a66bc1170fa7a870fdcdf91f9ec44708082
 
 
 ---------------------
@@ -10,8 +15,8 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: E:/Graduacao/ProjetoSD/ProjetoSD.sof
-  6. Assembler Device Options: E:/Graduacao/ProjetoSD/ProjetoSD.pof
+  5. Assembler Device Options: C:/Users/nicol/Desktop/ProjetoSD/ProjetoSD.sof
+  6. Assembler Device Options: C:/Users/nicol/Desktop/ProjetoSD/ProjetoSD.pof
   7. Assembler Messages
 
 
@@ -19,7 +24,7 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2009 Altera Corporation
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,9 +43,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
+<<<<<<< HEAD
 ; Assembler Status      ; Successful - Wed Oct 31 00:43:58 2018 ;
 ; Revision Name         ; ProjetoSD                             ;
 ; Top-level Entity Name ; Mux4                                  ;
+=======
+; Assembler Status      ; Successful - Thu Oct 25 19:32:10 2018 ;
+; Revision Name         ; ProjetoSD                             ;
+; Top-level Entity Name ; SomadorBCD                            ;
+>>>>>>> 5cc65a66bc1170fa7a870fdcdf91f9ec44708082
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -79,16 +90,17 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+--------------------------------------+
-; Assembler Generated Files            ;
-+--------------------------------------+
-; File Name                            ;
-+--------------------------------------+
-; E:/Graduacao/ProjetoSD/ProjetoSD.sof ;
-; E:/Graduacao/ProjetoSD/ProjetoSD.pof ;
-+--------------------------------------+
++------------------------------------------------+
+; Assembler Generated Files                      ;
++------------------------------------------------+
+; File Name                                      ;
++------------------------------------------------+
+; C:/Users/nicol/Desktop/ProjetoSD/ProjetoSD.sof ;
+; C:/Users/nicol/Desktop/ProjetoSD/ProjetoSD.pof ;
++------------------------------------------------+
 
 
+<<<<<<< HEAD
 +----------------------------------------------------------------+
 ; Assembler Device Options: E:/Graduacao/ProjetoSD/ProjetoSD.sof ;
 +----------------+-----------------------------------------------+
@@ -110,6 +122,29 @@ applicable agreement for further details.
 ; Checksum           ; 0x1EF3E243                                ;
 ; Compression Ratio  ; 3                                         ;
 +--------------------+-------------------------------------------+
+=======
++--------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/nicol/Desktop/ProjetoSD/ProjetoSD.sof ;
++----------------+---------------------------------------------------------+
+; Option         ; Setting                                                 ;
++----------------+---------------------------------------------------------+
+; Device         ; EP2S15F484C3                                            ;
+; JTAG usercode  ; 0xFFFFFFFF                                              ;
+; Checksum       ; 0x002774ED                                              ;
++----------------+---------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/nicol/Desktop/ProjetoSD/ProjetoSD.pof ;
++--------------------+-----------------------------------------------------+
+; Option             ; Setting                                             ;
++--------------------+-----------------------------------------------------+
+; Device             ; EPC16                                               ;
+; JTAG usercode      ; 0xFFFFFFFF                                          ;
+; Checksum           ; 0x1EF5CB6E                                          ;
+; Compression Ratio  ; 3                                                   ;
++--------------------+-----------------------------------------------------+
+>>>>>>> 5cc65a66bc1170fa7a870fdcdf91f9ec44708082
 
 
 +--------------------+
@@ -117,15 +152,26 @@ applicable agreement for further details.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus II Assembler
+<<<<<<< HEAD
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
     Info: Processing started: Wed Oct 31 00:43:57 2018
+=======
+    Info: Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Oct 25 19:32:07 2018
+>>>>>>> 5cc65a66bc1170fa7a870fdcdf91f9ec44708082
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ProjetoSD -c ProjetoSD
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 267 megabytes
+<<<<<<< HEAD
     Info: Processing ended: Wed Oct 31 00:43:59 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
+=======
+    Info: Processing ended: Thu Oct 25 19:32:11 2018
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+>>>>>>> 5cc65a66bc1170fa7a870fdcdf91f9ec44708082
 
 

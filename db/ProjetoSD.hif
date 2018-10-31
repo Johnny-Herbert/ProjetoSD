@@ -1,7 +1,7 @@
 Quartus II
-Version 9.1 Build 222 10/21/2009 SJ Web Edition
+Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
 7
-3500
+3666
 OFF
 OFF
 OFF
@@ -20,48 +20,39 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-Subtrador
-# storage
-db|ProjetoSD.(0).cnf
-db|ProjetoSD.(0).cnf
-# case_insensitive
-# source_file
-subtrador.bdf
-99b5b7d71bf51ee4588a1e2c0a61a56
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-Somador
-# storage
-db|ProjetoSD.(1).cnf
-db|ProjetoSD.(1).cnf
-# case_insensitive
-# source_file
-somador.bdf
-17426860ebb62edd975cab2a84f7c00
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
 FullAdder
 # storage
-db|ProjetoSD.(2).cnf
-db|ProjetoSD.(2).cnf
+db|ProjetoSD.(1).cnf
+db|ProjetoSD.(1).cnf
 # case_insensitive
 # source_file
 fulladder.bdf
 63dc30d2dddbc785929135bae3275cf2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+FullAdder:inst
+FullAdder:inst1
+FullAdder:inst2
+FullAdder:inst3
+FullAdder:inst6
+FullAdder:inst7
+}
+# macro_sequence
+
+# end
+# entity
+Subtrador
+# storage
+db|ProjetoSD.(4).cnf
+db|ProjetoSD.(4).cnf
+# case_insensitive
+# source_file
+subtrador.bdf
+1890468c7169d198414285b42dfdebe
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -73,8 +64,8 @@ AUTO
 # entity
 Complemento
 # storage
-db|ProjetoSD.(3).cnf
-db|ProjetoSD.(3).cnf
+db|ProjetoSD.(5).cnf
+db|ProjetoSD.(5).cnf
 # case_insensitive
 # source_file
 complemento.bdf
@@ -88,14 +79,99 @@ AUTO
 
 # end
 # entity
-ComparadorAnd
+Somador
 # storage
-db|ProjetoSD.(4).cnf
-db|ProjetoSD.(4).cnf
+db|ProjetoSD.(6).cnf
+db|ProjetoSD.(6).cnf
 # case_insensitive
 # source_file
-comparadorand.bdf
-4dbc629bb7bb736747e597491f5cb2
+somador.bdf
+17426860ebb62edd975cab2a84f7c00
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Display0a1
+# storage
+db|ProjetoSD.(7).cnf
+db|ProjetoSD.(7).cnf
+# case_insensitive
+# source_file
+display0a1.bdf
+c35ee47a72ccb284511b459d9dab5f5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Display-8a7
+# storage
+db|ProjetoSD.(2).cnf
+db|ProjetoSD.(2).cnf
+# case_insensitive
+# source_file
+display-8a7.bdf
+5a4dd45abc1a1a78229a9208f8e7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Display0a9
+# storage
+db|ProjetoSD.(3).cnf
+db|ProjetoSD.(3).cnf
+# case_insensitive
+# source_file
+display0a9.bdf
+e4aae9ded3a27bd926c8ad09e1ed019
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+DisplaySinal
+# storage
+db|ProjetoSD.(8).cnf
+db|ProjetoSD.(8).cnf
+# case_insensitive
+# source_file
+displaysinal.bdf
+c2625c5f513087f9de9dd7f8c8ffad
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+SomadorBCD
+# storage
+db|ProjetoSD.(0).cnf
+db|ProjetoSD.(0).cnf
+# case_insensitive
+# source_file
+somadorbcd.bdf
+c1f69ae9bced45cb10aa5dc9f7f13d
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
