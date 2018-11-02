@@ -5,15 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-<<<<<<< HEAD
-Actual Time    : 10.709 ns
-From           : C[1]
-To             : S[0]
-=======
-Actual Time    : 10.537 ns
+Actual Time    : 8.837 ns
 From           : A[1]
-To             : Overflow
->>>>>>> 5cc65a66bc1170fa7a870fdcdf91f9ec44708082
+To             : S[1]
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
