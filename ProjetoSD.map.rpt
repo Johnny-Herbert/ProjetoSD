@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProjetoSD
-Fri Nov 02 19:17:48 2018
+Sat Nov 03 00:18:37 2018
 Quartus II Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Fri Nov 02 19:17:48 2018        ;
+; Analysis & Synthesis Status   ; Successful - Sat Nov 03 00:18:37 2018        ;
 ; Quartus II Version            ; 9.1 Build 304 01/25/2010 SP 1 SJ Web Edition ;
 ; Revision Name                 ; ProjetoSD                                    ;
-; Top-level Entity Name         ; Mux4                                         ;
+; Top-level Entity Name         ; ULA                                          ;
 ; Family                        ; Stratix II                                   ;
 ; Logic utilization             ; N/A                                          ;
-;     Combinational ALUTs       ; 18                                           ;
+;     Combinational ALUTs       ; 31                                           ;
 ;     Dedicated logic registers ; 0                                            ;
 ; Total registers               ; 0                                            ;
-; Total pins                    ; 39                                           ;
+; Total pins                    ; 20                                           ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0                                            ;
 ; DSP block 9-bit elements      ; 0                                            ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; Mux4               ; ProjetoSD          ;
+; Top-level entity name                                                      ; ULA                ; ProjetoSD          ;
 ; Family name                                                                ; Stratix II         ; Stratix II         ;
 ; Type of Retiming Performed During Resynthesis                              ; Full               ;                    ;
 ; Resynthesis Optimization Effort                                            ; Normal             ;                    ;
@@ -152,62 +152,87 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                              ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path              ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------+
-; Mux4.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/Mux4.bdf ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                               ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
+; ComparadorMaiorQVetor.bdf        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/ComparadorMaiorQVetor.bdf ;
+; ComparadorMenorQVetor.bdf        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/ComparadorMenorQVetor.bdf ;
+; Igualdade1Bit.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/Igualdade1Bit.bdf         ;
+; Igualdade4Bits.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/Igualdade4Bits.bdf        ;
+; MaiorQ1bit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/MaiorQ1bit.bdf            ;
+; MaiorQSignificativo.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/MaiorQSignificativo.bdf   ;
+; ComparadorAnd.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/ComparadorAnd.bdf         ;
+; ComparadorXor.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/ComparadorXor.bdf         ;
+; Complemento.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/Complemento.bdf           ;
+; FullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/FullAdder.bdf             ;
+; Somador.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/Somador.bdf               ;
+; Subtrador.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/Subtrador.bdf             ;
+; Mux.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/Mux.bdf                   ;
+; Mux4.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/Mux4.bdf                  ;
+; Display-8a7.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/Display-8a7.bdf           ;
+; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/nicol/Desktop/ProjetoSD/ULA.bdf                   ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+-----------------------------------------------+-------+
-; Resource                                      ; Usage ;
-+-----------------------------------------------+-------+
-; Estimated ALUTs Used                          ; 18    ;
-; Dedicated logic registers                     ; 0     ;
-;                                               ;       ;
-; Estimated ALUTs Unavailable                   ; 2     ;
-;                                               ;       ;
-; Total combinational functions                 ; 18    ;
-; Combinational ALUT usage by number of inputs  ;       ;
-;     -- 7 input functions                      ; 0     ;
-;     -- 6 input functions                      ; 2     ;
-;     -- 5 input functions                      ; 12    ;
-;     -- 4 input functions                      ; 4     ;
-;     -- <=3 input functions                    ; 0     ;
-;                                               ;       ;
-; Combinational ALUTs by mode                   ;       ;
-;     -- normal mode                            ; 18    ;
-;     -- extended LUT mode                      ; 0     ;
-;     -- arithmetic mode                        ; 0     ;
-;     -- shared arithmetic mode                 ; 0     ;
-;                                               ;       ;
-; Estimated ALUT/register pairs used            ; 20    ;
-;                                               ;       ;
-; Total registers                               ; 0     ;
-;     -- Dedicated logic registers              ; 0     ;
-;     -- I/O registers                          ; 0     ;
-;                                               ;       ;
-; Estimated ALMs:  partially or completely used ; 10    ;
-;                                               ;       ;
-; I/O pins                                      ; 39    ;
-; Maximum fan-out node                          ; C[1]  ;
-; Maximum fan-out                               ; 15    ;
-; Total fan-out                                 ; 92    ;
-; Average fan-out                               ; 1.61  ;
-+-----------------------------------------------+-------+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++-----------------------------------------------+-------------+
+; Resource                                      ; Usage       ;
++-----------------------------------------------+-------------+
+; Estimated ALUTs Used                          ; 31          ;
+; Dedicated logic registers                     ; 0           ;
+;                                               ;             ;
+; Estimated ALUTs Unavailable                   ; 10          ;
+;                                               ;             ;
+; Total combinational functions                 ; 31          ;
+; Combinational ALUT usage by number of inputs  ;             ;
+;     -- 7 input functions                      ; 0           ;
+;     -- 6 input functions                      ; 10          ;
+;     -- 5 input functions                      ; 8           ;
+;     -- 4 input functions                      ; 7           ;
+;     -- <=3 input functions                    ; 6           ;
+;                                               ;             ;
+; Combinational ALUTs by mode                   ;             ;
+;     -- normal mode                            ; 31          ;
+;     -- extended LUT mode                      ; 0           ;
+;     -- arithmetic mode                        ; 0           ;
+;     -- shared arithmetic mode                 ; 0           ;
+;                                               ;             ;
+; Estimated ALUT/register pairs used            ; 41          ;
+;                                               ;             ;
+; Total registers                               ; 0           ;
+;     -- Dedicated logic registers              ; 0           ;
+;     -- I/O registers                          ; 0           ;
+;                                               ;             ;
+; Estimated ALMs:  partially or completely used ; 21          ;
+;                                               ;             ;
+; I/O pins                                      ; 20          ;
+; Maximum fan-out node                          ; EntradaB[1] ;
+; Maximum fan-out                               ; 10          ;
+; Total fan-out                                 ; 153         ;
+; Average fan-out                               ; 3.00        ;
++-----------------------------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                           ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |Mux4                      ; 18 (18)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 39   ; 0            ; |Mux4               ; work         ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                          ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------+--------------+
+; |ULA                       ; 31 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 20   ; 0            ; |ULA                                               ; work         ;
+;    |Display-8a7:inst7|     ; 7 (7)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Display-8a7:inst7                             ; work         ;
+;    |Mux4:inst5|            ; 13 (13)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Mux4:inst5                                    ; work         ;
+;    |Mux:inst11|            ; 5 (5)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Mux:inst11                                    ; work         ;
+;    |Mux:inst6|             ; 3 (3)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Mux:inst6                                     ;              ;
+;    |Somador:inst|          ; 1 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Somador:inst                                  ; work         ;
+;       |FullAdder:inst4|    ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Somador:inst|FullAdder:inst4                  ; work         ;
+;    |Subtrador:inst1|       ; 2 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Subtrador:inst1                               ; work         ;
+;       |Somador:inst1|      ; 2 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Subtrador:inst1|Somador:inst1                 ; work         ;
+;          |FullAdder:inst4| ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Subtrador:inst1|Somador:inst1|FullAdder:inst4 ; work         ;
+;          |FullAdder:inst5| ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|Subtrador:inst1|Somador:inst1|FullAdder:inst5 ; work         ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -232,7 +257,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 02 19:17:43 2018
+    Info: Processing started: Sat Nov 03 00:18:32 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProjetoSD -c ProjetoSD
 Info: Found 1 design units, including 1 entities, in source file comparadormaiorqvetor.bdf
     Info: Found entity 1: ComparadorMaiorQVetor
@@ -274,18 +299,39 @@ Info: Found 1 design units, including 1 entities, in source file display0a1.bdf
     Info: Found entity 1: Display0a1
 Info: Found 1 design units, including 1 entities, in source file displaysinal.bdf
     Info: Found entity 1: DisplaySinal
-Info: Elaborating entity "Mux4" for the top level hierarchy
+Info: Found 1 design units, including 1 entities, in source file projetosd.bdf
+    Info: Found entity 1: ProjetoSD
+Info: Found 1 design units, including 1 entities, in source file ula.bdf
+    Info: Found entity 1: ULA
+Info: Found 1 design units, including 1 entities, in source file somadorbcdcomdisplay.bdf
+    Info: Found entity 1: SomadorBCDComDisplay
+Info: Elaborating entity "ULA" for the top level hierarchy
+Info: Elaborating entity "Mux" for hierarchy "Mux:inst6"
+Info: Elaborating entity "Somador" for hierarchy "Somador:inst"
+Info: Elaborating entity "FullAdder" for hierarchy "Somador:inst|FullAdder:inst4"
+Info: Elaborating entity "Subtrador" for hierarchy "Subtrador:inst1"
+Info: Elaborating entity "Complemento" for hierarchy "Subtrador:inst1|Complemento:inst"
+Info: Elaborating entity "ComparadorMaiorQVetor" for hierarchy "ComparadorMaiorQVetor:inst8"
+Info: Elaborating entity "MaiorQSignificativo" for hierarchy "ComparadorMaiorQVetor:inst8|MaiorQSignificativo:inst1"
+Info: Elaborating entity "MaiorQ1bit" for hierarchy "ComparadorMaiorQVetor:inst8|MaiorQ1bit:inst2"
+Info: Elaborating entity "ComparadorMenorQVetor" for hierarchy "ComparadorMenorQVetor:inst9"
+Info: Elaborating entity "Igualdade4Bits" for hierarchy "Igualdade4Bits:inst10"
+Info: Elaborating entity "Igualdade1Bit" for hierarchy "Igualdade4Bits:inst10|Igualdade1Bit:inst2"
+Info: Elaborating entity "Display-8a7" for hierarchy "Display-8a7:inst7"
+Info: Elaborating entity "Mux4" for hierarchy "Mux4:inst5"
+Info: Elaborating entity "ComparadorXor" for hierarchy "ComparadorXor:inst4"
+Info: Elaborating entity "ComparadorAnd" for hierarchy "ComparadorAnd:inst3"
 Warning: Ignored assignments for entity "ProjetoSD" -- entity does not exist in design
     Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity ProjetoSD -section_id "Root Region" was ignored
     Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity ProjetoSD -section_id "Root Region" was ignored
-Info: Implemented 57 device resources after synthesis - the final resource count might be different
-    Info: Implemented 35 input pins
-    Info: Implemented 4 output pins
-    Info: Implemented 18 logic cells
+Info: Implemented 51 device resources after synthesis - the final resource count might be different
+    Info: Implemented 11 input pins
+    Info: Implemented 9 output pins
+    Info: Implemented 31 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 245 megabytes
-    Info: Processing ended: Fri Nov 02 19:17:48 2018
+    Info: Processing ended: Sat Nov 03 00:18:37 2018
     Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:06
 
 

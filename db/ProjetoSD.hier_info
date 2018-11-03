@@ -1,4 +1,719 @@
-|Mux4
+|ULA
+Overflow <= Mux:inst6.S
+EntradaA[0] => Somador:inst.Vetor1Somador[0]
+EntradaA[0] => Subtrador:inst1.Vetor1Subtrador[0]
+EntradaA[0] => ComparadorMaiorQVetor:inst8.A[0]
+EntradaA[0] => ComparadorMenorQVetor:inst9.A[0]
+EntradaA[0] => Igualdade4Bits:inst10.A[0]
+EntradaA[0] => ComparadorXor:inst4.A[0]
+EntradaA[0] => ComparadorAnd:inst3.A[0]
+EntradaA[1] => Somador:inst.Vetor1Somador[1]
+EntradaA[1] => Subtrador:inst1.Vetor1Subtrador[1]
+EntradaA[1] => ComparadorMaiorQVetor:inst8.A[1]
+EntradaA[1] => ComparadorMenorQVetor:inst9.A[1]
+EntradaA[1] => Igualdade4Bits:inst10.A[1]
+EntradaA[1] => ComparadorXor:inst4.A[1]
+EntradaA[1] => ComparadorAnd:inst3.A[1]
+EntradaA[2] => Somador:inst.Vetor1Somador[2]
+EntradaA[2] => Subtrador:inst1.Vetor1Subtrador[2]
+EntradaA[2] => ComparadorMaiorQVetor:inst8.A[2]
+EntradaA[2] => ComparadorMenorQVetor:inst9.A[2]
+EntradaA[2] => Igualdade4Bits:inst10.A[2]
+EntradaA[2] => ComparadorXor:inst4.A[2]
+EntradaA[2] => ComparadorAnd:inst3.A[2]
+EntradaA[3] => Somador:inst.Vetor1Somador[3]
+EntradaA[3] => Subtrador:inst1.Vetor1Subtrador[3]
+EntradaA[3] => ComparadorMaiorQVetor:inst8.A[3]
+EntradaA[3] => ComparadorMenorQVetor:inst9.A[3]
+EntradaA[3] => Igualdade4Bits:inst10.A[3]
+EntradaA[3] => ComparadorXor:inst4.A[3]
+EntradaA[3] => ComparadorAnd:inst3.A[3]
+EntradaB[0] => Somador:inst.Vetor2Somador[0]
+EntradaB[0] => Subtrador:inst1.Vetor2Subtrador[0]
+EntradaB[0] => Complemento:inst2.EntradaComplemento[0]
+EntradaB[0] => ComparadorMaiorQVetor:inst8.B[0]
+EntradaB[0] => ComparadorMenorQVetor:inst9.B[0]
+EntradaB[0] => Igualdade4Bits:inst10.B[0]
+EntradaB[0] => ComparadorXor:inst4.B[0]
+EntradaB[0] => ComparadorAnd:inst3.B[0]
+EntradaB[1] => Somador:inst.Vetor2Somador[1]
+EntradaB[1] => Subtrador:inst1.Vetor2Subtrador[1]
+EntradaB[1] => Complemento:inst2.EntradaComplemento[1]
+EntradaB[1] => ComparadorMaiorQVetor:inst8.B[1]
+EntradaB[1] => ComparadorMenorQVetor:inst9.B[1]
+EntradaB[1] => Igualdade4Bits:inst10.B[1]
+EntradaB[1] => ComparadorXor:inst4.B[1]
+EntradaB[1] => ComparadorAnd:inst3.B[1]
+EntradaB[2] => Somador:inst.Vetor2Somador[2]
+EntradaB[2] => Subtrador:inst1.Vetor2Subtrador[2]
+EntradaB[2] => Complemento:inst2.EntradaComplemento[2]
+EntradaB[2] => ComparadorMaiorQVetor:inst8.B[2]
+EntradaB[2] => ComparadorMenorQVetor:inst9.B[2]
+EntradaB[2] => Igualdade4Bits:inst10.B[2]
+EntradaB[2] => ComparadorXor:inst4.B[2]
+EntradaB[2] => ComparadorAnd:inst3.B[2]
+EntradaB[3] => Somador:inst.Vetor2Somador[3]
+EntradaB[3] => Subtrador:inst1.Vetor2Subtrador[3]
+EntradaB[3] => Complemento:inst2.EntradaComplemento[3]
+EntradaB[3] => ComparadorMaiorQVetor:inst8.B[3]
+EntradaB[3] => ComparadorMenorQVetor:inst9.B[3]
+EntradaB[3] => Igualdade4Bits:inst10.B[3]
+EntradaB[3] => ComparadorXor:inst4.B[3]
+EntradaB[3] => ComparadorAnd:inst3.B[3]
+Seletor[0] => Mux:inst6.C[2]
+Seletor[0] => Mux:inst11.C[2]
+Seletor[0] => Mux4:inst5.C[2]
+Seletor[1] => Mux:inst6.C[1]
+Seletor[1] => Mux:inst11.C[1]
+Seletor[1] => Mux4:inst5.C[1]
+Seletor[2] => Mux:inst6.C[0]
+Seletor[2] => Mux:inst11.C[0]
+Seletor[2] => Mux4:inst5.C[0]
+ResultadoOperacaoBit <= Mux:inst11.S
+a <= Display-8a7:inst7.a
+b <= Display-8a7:inst7.b
+c <= Display-8a7:inst7.c
+d <= Display-8a7:inst7.d
+e <= Display-8a7:inst7.e
+f <= Display-8a7:inst7.f
+g <= Display-8a7:inst7.g
+
+
+|ULA|Mux:inst6
+S <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+C[2] => inst1.IN2
+C[2] => inst3.IN2
+C[2] => inst12.IN0
+C[2] => inst5.IN2
+C[2] => inst7.IN2
+C[1] => inst1.IN1
+C[1] => inst11.IN0
+C[1] => inst2.IN1
+C[1] => inst6.IN1
+C[1] => inst5.IN1
+C[0] => inst1.IN0
+C[0] => inst3.IN0
+C[0] => inst2.IN0
+C[0] => inst4.IN0
+C[0] => inst.IN0
+IN8 => inst1.IN3
+IN6 => inst3.IN3
+IN7 => inst2.IN3
+IN5 => inst4.IN3
+IN3 => inst6.IN3
+IN4 => inst5.IN3
+IN2 => inst7.IN3
+IN1 => inst8.IN3
+
+
+|ULA|Somador:inst
+Overflow <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Vetor2Somador[0] => FullAdder:inst6.bitA
+Vetor2Somador[1] => FullAdder:inst5.bitA
+Vetor2Somador[2] => FullAdder:inst4.bitA
+Vetor2Somador[3] => FullAdder:inst.bitA
+Vetor1Somador[0] => FullAdder:inst6.bitB
+Vetor1Somador[1] => FullAdder:inst5.bitB
+Vetor1Somador[2] => FullAdder:inst4.bitB
+Vetor1Somador[3] => FullAdder:inst.bitB
+SaidaSomador[0] <= FullAdder:inst6.Resultado
+SaidaSomador[1] <= FullAdder:inst5.Resultado
+SaidaSomador[2] <= FullAdder:inst4.Resultado
+SaidaSomador[3] <= FullAdder:inst.Resultado
+
+
+|ULA|Somador:inst|FullAdder:inst4
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Somador:inst|FullAdder:inst5
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Somador:inst|FullAdder:inst6
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Somador:inst|FullAdder:inst
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Subtrador:inst1
+Overflow <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Vetor2Subtrador[0] => Complemento:inst.EntradaComplemento[0]
+Vetor2Subtrador[1] => Complemento:inst.EntradaComplemento[1]
+Vetor2Subtrador[2] => Complemento:inst.EntradaComplemento[2]
+Vetor2Subtrador[3] => Complemento:inst.EntradaComplemento[3]
+Vetor1Subtrador[0] => Somador:inst1.Vetor1Somador[0]
+Vetor1Subtrador[1] => Somador:inst1.Vetor1Somador[1]
+Vetor1Subtrador[2] => Somador:inst1.Vetor1Somador[2]
+Vetor1Subtrador[3] => Somador:inst1.Vetor1Somador[3]
+SaidaSubtrador[0] <= Somador:inst1.SaidaSomador[0]
+SaidaSubtrador[1] <= Somador:inst1.SaidaSomador[1]
+SaidaSubtrador[2] <= Somador:inst1.SaidaSomador[2]
+SaidaSubtrador[3] <= Somador:inst1.SaidaSomador[3]
+
+
+|ULA|Subtrador:inst1|Complemento:inst
+Overflow <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+EntradaComplemento[0] => inst7.IN0
+EntradaComplemento[1] => inst6.IN0
+EntradaComplemento[2] => inst5.IN0
+EntradaComplemento[3] => inst4.IN0
+SaidaComplemento[0] <= FullAdder:inst3.Resultado
+SaidaComplemento[1] <= FullAdder:inst2.Resultado
+SaidaComplemento[2] <= FullAdder:inst1.Resultado
+SaidaComplemento[3] <= FullAdder:inst.Resultado
+
+
+|ULA|Subtrador:inst1|Complemento:inst|FullAdder:inst1
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Subtrador:inst1|Complemento:inst|FullAdder:inst2
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Subtrador:inst1|Complemento:inst|FullAdder:inst3
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Subtrador:inst1|Complemento:inst|FullAdder:inst
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Subtrador:inst1|Somador:inst1
+Overflow <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Vetor2Somador[0] => FullAdder:inst6.bitA
+Vetor2Somador[1] => FullAdder:inst5.bitA
+Vetor2Somador[2] => FullAdder:inst4.bitA
+Vetor2Somador[3] => FullAdder:inst.bitA
+Vetor1Somador[0] => FullAdder:inst6.bitB
+Vetor1Somador[1] => FullAdder:inst5.bitB
+Vetor1Somador[2] => FullAdder:inst4.bitB
+Vetor1Somador[3] => FullAdder:inst.bitB
+SaidaSomador[0] <= FullAdder:inst6.Resultado
+SaidaSomador[1] <= FullAdder:inst5.Resultado
+SaidaSomador[2] <= FullAdder:inst4.Resultado
+SaidaSomador[3] <= FullAdder:inst.Resultado
+
+
+|ULA|Subtrador:inst1|Somador:inst1|FullAdder:inst4
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Subtrador:inst1|Somador:inst1|FullAdder:inst5
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Subtrador:inst1|Somador:inst1|FullAdder:inst6
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Subtrador:inst1|Somador:inst1|FullAdder:inst
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Complemento:inst2
+Overflow <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+EntradaComplemento[0] => inst7.IN0
+EntradaComplemento[1] => inst6.IN0
+EntradaComplemento[2] => inst5.IN0
+EntradaComplemento[3] => inst4.IN0
+SaidaComplemento[0] <= FullAdder:inst3.Resultado
+SaidaComplemento[1] <= FullAdder:inst2.Resultado
+SaidaComplemento[2] <= FullAdder:inst1.Resultado
+SaidaComplemento[3] <= FullAdder:inst.Resultado
+
+
+|ULA|Complemento:inst2|FullAdder:inst1
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Complemento:inst2|FullAdder:inst2
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Complemento:inst2|FullAdder:inst3
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Complemento:inst2|FullAdder:inst
+Resultado <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+bitA => inst2.IN0
+bitA => inst7.IN0
+bitA => inst8.IN0
+bitA => inst11.IN0
+bitA => inst12.IN0
+bitB => inst5.IN1
+bitB => inst7.IN1
+bitB => inst3.IN0
+bitB => inst12.IN1
+bitB => inst10.IN0
+CarryIn => inst.IN0
+CarryIn => inst7.IN2
+CarryIn => inst6.IN2
+CarryIn => inst11.IN1
+CarryIn => inst10.IN1
+CarryOut <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Mux:inst11
+S <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+C[2] => inst1.IN2
+C[2] => inst3.IN2
+C[2] => inst12.IN0
+C[2] => inst5.IN2
+C[2] => inst7.IN2
+C[1] => inst1.IN1
+C[1] => inst11.IN0
+C[1] => inst2.IN1
+C[1] => inst6.IN1
+C[1] => inst5.IN1
+C[0] => inst1.IN0
+C[0] => inst3.IN0
+C[0] => inst2.IN0
+C[0] => inst4.IN0
+C[0] => inst.IN0
+IN8 => inst1.IN3
+IN6 => inst3.IN3
+IN7 => inst2.IN3
+IN5 => inst4.IN3
+IN3 => inst6.IN3
+IN4 => inst5.IN3
+IN2 => inst7.IN3
+IN1 => inst8.IN3
+
+
+|ULA|ComparadorMaiorQVetor:inst8
+Saida <= MaiorQSignificativo:inst1.PreviousOut
+A[0] => MaiorQ1bit:inst.A
+A[1] => MaiorQ1bit:inst3.A
+A[2] => MaiorQ1bit:inst2.A
+A[3] => MaiorQSignificativo:inst1.A
+B[0] => MaiorQ1bit:inst.B
+B[1] => MaiorQ1bit:inst3.B
+B[2] => MaiorQ1bit:inst2.B
+B[3] => MaiorQSignificativo:inst1.B
+
+
+|ULA|ComparadorMaiorQVetor:inst8|MaiorQSignificativo:inst1
+PreviousOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+B => inst5.IN1
+Previous => inst.IN1
+Previous => inst5.IN0
+A => inst6.IN0
+
+
+|ULA|ComparadorMaiorQVetor:inst8|MaiorQ1bit:inst2
+PreviousOut <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+previous => inst6.IN0
+previous => inst.IN0
+A => inst6.IN1
+A => inst.IN1
+B => inst7.IN0
+
+
+|ULA|ComparadorMaiorQVetor:inst8|MaiorQ1bit:inst3
+PreviousOut <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+previous => inst6.IN0
+previous => inst.IN0
+A => inst6.IN1
+A => inst.IN1
+B => inst7.IN0
+
+
+|ULA|ComparadorMaiorQVetor:inst8|MaiorQ1bit:inst
+PreviousOut <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+previous => inst6.IN0
+previous => inst.IN0
+A => inst6.IN1
+A => inst.IN1
+B => inst7.IN0
+
+
+|ULA|ComparadorMenorQVetor:inst9
+Saida <= MaiorQ1bit:inst7.PreviousOut
+A[0] => MaiorQSignificativo:inst.A
+A[1] => MaiorQSignificativo:inst3.A
+A[2] => MaiorQSignificativo:inst4.A
+A[3] => MaiorQ1bit:inst7.A
+B[0] => MaiorQSignificativo:inst.B
+B[1] => MaiorQSignificativo:inst3.B
+B[2] => MaiorQSignificativo:inst4.B
+B[3] => MaiorQ1bit:inst7.B
+
+
+|ULA|ComparadorMenorQVetor:inst9|MaiorQ1bit:inst7
+PreviousOut <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+previous => inst6.IN0
+previous => inst.IN0
+A => inst6.IN1
+A => inst.IN1
+B => inst7.IN0
+
+
+|ULA|ComparadorMenorQVetor:inst9|MaiorQSignificativo:inst4
+PreviousOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+B => inst5.IN1
+Previous => inst.IN1
+Previous => inst5.IN0
+A => inst6.IN0
+
+
+|ULA|ComparadorMenorQVetor:inst9|MaiorQSignificativo:inst3
+PreviousOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+B => inst5.IN1
+Previous => inst.IN1
+Previous => inst5.IN0
+A => inst6.IN0
+
+
+|ULA|ComparadorMenorQVetor:inst9|MaiorQSignificativo:inst
+PreviousOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+B => inst5.IN1
+Previous => inst.IN1
+Previous => inst5.IN0
+A => inst6.IN0
+
+
+|ULA|Igualdade4Bits:inst10
+Saida <= Igualdade1Bit:inst2.Saida
+A[0] => Igualdade1Bit:inst.A
+A[1] => Igualdade1Bit:inst3.A
+A[2] => Igualdade1Bit:inst1.A
+A[3] => Igualdade1Bit:inst2.A
+B[0] => Igualdade1Bit:inst.B
+B[1] => Igualdade1Bit:inst3.B
+B[2] => Igualdade1Bit:inst1.B
+B[3] => Igualdade1Bit:inst2.B
+
+
+|ULA|Igualdade4Bits:inst10|Igualdade1Bit:inst2
+Saida <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst8.IN0
+B => inst1.IN1
+B => inst7.IN0
+Previous => inst.IN1
+
+
+|ULA|Igualdade4Bits:inst10|Igualdade1Bit:inst1
+Saida <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst8.IN0
+B => inst1.IN1
+B => inst7.IN0
+Previous => inst.IN1
+
+
+|ULA|Igualdade4Bits:inst10|Igualdade1Bit:inst3
+Saida <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst8.IN0
+B => inst1.IN1
+B => inst7.IN0
+Previous => inst.IN1
+
+
+|ULA|Igualdade4Bits:inst10|Igualdade1Bit:inst
+Saida <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst8.IN0
+B => inst1.IN1
+B => inst7.IN0
+Previous => inst.IN1
+
+
+|ULA|Display-8a7:inst7
+a <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+EntradaDisplay-8a7[0] => inst3.IN0
+EntradaDisplay-8a7[0] => inst7.IN2
+EntradaDisplay-8a7[0] => inst9.IN2
+EntradaDisplay-8a7[0] => inst15.IN2
+EntradaDisplay-8a7[0] => inst17.IN3
+EntradaDisplay-8a7[0] => inst22.IN2
+EntradaDisplay-8a7[0] => inst21.IN2
+EntradaDisplay-8a7[1] => inst6.IN1
+EntradaDisplay-8a7[1] => inst5.IN0
+EntradaDisplay-8a7[1] => inst2.IN0
+EntradaDisplay-8a7[1] => inst15.IN1
+EntradaDisplay-8a7[1] => inst20.IN0
+EntradaDisplay-8a7[1] => inst21.IN1
+EntradaDisplay-8a7[1] => inst25.IN0
+EntradaDisplay-8a7[1] => inst31.IN2
+EntradaDisplay-8a7[1] => inst36.IN1
+EntradaDisplay-8a7[2] => inst1.IN0
+EntradaDisplay-8a7[2] => inst7.IN1
+EntradaDisplay-8a7[2] => inst12.IN1
+EntradaDisplay-8a7[2] => inst15.IN0
+EntradaDisplay-8a7[2] => inst18.IN1
+EntradaDisplay-8a7[2] => inst22.IN0
+EntradaDisplay-8a7[2] => inst30.IN1
+EntradaDisplay-8a7[2] => inst29.IN1
+EntradaDisplay-8a7[2] => inst33.IN0
+EntradaDisplay-8a7[2] => inst35.IN0
+EntradaDisplay-8a7[3] => inst4.IN0
+EntradaDisplay-8a7[3] => inst.IN0
+EntradaDisplay-8a7[3] => inst9.IN0
+EntradaDisplay-8a7[3] => inst12.IN0
+EntradaDisplay-8a7[3] => inst14.IN0
+EntradaDisplay-8a7[3] => inst19.IN0
+EntradaDisplay-8a7[3] => inst31.IN0
+EntradaDisplay-8a7[3] => inst34.IN0
+b <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+c <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+d <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+e <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+f <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+g <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Mux4:inst5
 S[0] <= inst22[0].DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= inst22[1].DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= inst22[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -86,5 +801,35 @@ IN1[3] => inst8[0].IN3
 IN1[2] => inst8[1].IN3
 IN1[1] => inst8[2].IN3
 IN1[0] => inst8[3].IN3
+
+
+|ULA|ComparadorXor:inst4
+S[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B[0] => inst4.IN0
+B[1] => inst3.IN0
+B[2] => inst2.IN0
+B[3] => inst.IN0
+A[0] => inst4.IN1
+A[1] => inst3.IN1
+A[2] => inst2.IN1
+A[3] => inst.IN1
+
+
+|ULA|ComparadorAnd:inst3
+S[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B[0] => inst3.IN0
+B[1] => inst2.IN0
+B[2] => inst1.IN0
+B[3] => inst.IN0
+A[0] => inst3.IN1
+A[1] => inst2.IN1
+A[2] => inst1.IN1
+A[3] => inst.IN1
 
 

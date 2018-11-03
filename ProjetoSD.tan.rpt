@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for ProjetoSD
-Fri Nov 02 19:18:10 2018
+Sat Nov 03 00:18:52 2018
 Quartus II Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
 
 
@@ -34,14 +34,14 @@ applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                                                                 ;
-+------------------------------+-------+---------------+-------------+------+------+------------+----------+--------------+
-; Type                         ; Slack ; Required Time ; Actual Time ; From ; To   ; From Clock ; To Clock ; Failed Paths ;
-+------------------------------+-------+---------------+-------------+------+------+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 10.709 ns   ; C[1] ; S[0] ; --         ; --       ; 0            ;
-; Total number of failed paths ;       ;               ;             ;      ;      ;            ;          ; 0            ;
-+------------------------------+-------+---------------+-------------+------+------+------------+----------+--------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                      ;
++------------------------------+-------+---------------+-------------+-------------+----+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From        ; To ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+-------------+----+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 12.768 ns   ; EntradaA[1] ; g  ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;             ;    ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+-------------+----+------------+----------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -87,56 +87,107 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------+
-; tpd                                                         ;
-+-------+-------------------+-----------------+--------+------+
-; Slack ; Required P2P Time ; Actual P2P Time ; From   ; To   ;
-+-------+-------------------+-----------------+--------+------+
-; N/A   ; None              ; 10.709 ns       ; C[1]   ; S[0] ;
-; N/A   ; None              ; 10.204 ns       ; C[1]   ; S[1] ;
-; N/A   ; None              ; 9.854 ns        ; C[1]   ; S[3] ;
-; N/A   ; None              ; 9.724 ns        ; C[0]   ; S[0] ;
-; N/A   ; None              ; 9.715 ns        ; C[1]   ; S[2] ;
-; N/A   ; None              ; 9.510 ns        ; IN1[3] ; S[0] ;
-; N/A   ; None              ; 9.226 ns        ; C[0]   ; S[1] ;
-; N/A   ; None              ; 9.201 ns        ; C[2]   ; S[0] ;
-; N/A   ; None              ; 9.196 ns        ; IN8[2] ; S[1] ;
-; N/A   ; None              ; 9.192 ns        ; IN4[2] ; S[1] ;
-; N/A   ; None              ; 9.138 ns        ; IN2[3] ; S[0] ;
-; N/A   ; None              ; 9.108 ns        ; IN2[2] ; S[1] ;
-; N/A   ; None              ; 9.040 ns        ; IN5[3] ; S[0] ;
-; N/A   ; None              ; 8.959 ns        ; IN6[1] ; S[2] ;
-; N/A   ; None              ; 8.799 ns        ; IN5[0] ; S[3] ;
-; N/A   ; None              ; 8.726 ns        ; C[0]   ; S[2] ;
-; N/A   ; None              ; 8.703 ns        ; C[2]   ; S[1] ;
-; N/A   ; None              ; 8.663 ns        ; IN3[2] ; S[1] ;
-; N/A   ; None              ; 8.616 ns        ; IN5[2] ; S[1] ;
-; N/A   ; None              ; 8.609 ns        ; IN4[0] ; S[3] ;
-; N/A   ; None              ; 8.572 ns        ; C[2]   ; S[3] ;
-; N/A   ; None              ; 8.508 ns        ; IN4[1] ; S[2] ;
-; N/A   ; None              ; 8.506 ns        ; IN6[0] ; S[3] ;
-; N/A   ; None              ; 8.505 ns        ; IN1[1] ; S[2] ;
-; N/A   ; None              ; 8.442 ns        ; IN7[2] ; S[1] ;
-; N/A   ; None              ; 8.405 ns        ; C[2]   ; S[2] ;
-; N/A   ; None              ; 8.369 ns        ; IN6[3] ; S[0] ;
-; N/A   ; None              ; 8.354 ns        ; IN1[2] ; S[1] ;
-; N/A   ; None              ; 8.270 ns        ; IN8[3] ; S[0] ;
-; N/A   ; None              ; 8.260 ns        ; IN8[0] ; S[3] ;
-; N/A   ; None              ; 8.227 ns        ; IN7[3] ; S[0] ;
-; N/A   ; None              ; 8.198 ns        ; IN7[0] ; S[3] ;
-; N/A   ; None              ; 8.118 ns        ; IN6[2] ; S[1] ;
-; N/A   ; None              ; 8.108 ns        ; C[0]   ; S[3] ;
-; N/A   ; None              ; 8.021 ns        ; IN5[1] ; S[2] ;
-; N/A   ; None              ; 8.011 ns        ; IN3[3] ; S[0] ;
-; N/A   ; None              ; 7.999 ns        ; IN3[1] ; S[2] ;
-; N/A   ; None              ; 7.990 ns        ; IN3[0] ; S[3] ;
-; N/A   ; None              ; 7.980 ns        ; IN7[1] ; S[2] ;
-; N/A   ; None              ; 7.965 ns        ; IN4[3] ; S[0] ;
-; N/A   ; None              ; 7.836 ns        ; IN8[1] ; S[2] ;
-; N/A   ; None              ; 7.685 ns        ; IN1[0] ; S[3] ;
-; N/A   ; None              ; 7.655 ns        ; IN2[0] ; S[3] ;
-; N/A   ; None              ; 7.575 ns        ; IN2[1] ; S[2] ;
-+-------+-------------------+-----------------+--------+------+
++----------------------------------------------------------------------------------+
+; tpd                                                                              ;
++-------+-------------------+-----------------+-------------+----------------------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From        ; To                   ;
++-------+-------------------+-----------------+-------------+----------------------+
+; N/A   ; None              ; 12.768 ns       ; EntradaA[1] ; g                    ;
+; N/A   ; None              ; 12.741 ns       ; EntradaA[1] ; b                    ;
+; N/A   ; None              ; 12.706 ns       ; EntradaA[1] ; d                    ;
+; N/A   ; None              ; 12.660 ns       ; EntradaA[1] ; c                    ;
+; N/A   ; None              ; 12.611 ns       ; EntradaA[1] ; f                    ;
+; N/A   ; None              ; 12.197 ns       ; Seletor[1]  ; g                    ;
+; N/A   ; None              ; 12.169 ns       ; Seletor[1]  ; b                    ;
+; N/A   ; None              ; 12.142 ns       ; Seletor[1]  ; c                    ;
+; N/A   ; None              ; 12.135 ns       ; Seletor[1]  ; d                    ;
+; N/A   ; None              ; 12.038 ns       ; Seletor[1]  ; f                    ;
+; N/A   ; None              ; 11.940 ns       ; EntradaB[0] ; g                    ;
+; N/A   ; None              ; 11.912 ns       ; EntradaB[0] ; b                    ;
+; N/A   ; None              ; 11.885 ns       ; EntradaB[0] ; c                    ;
+; N/A   ; None              ; 11.878 ns       ; EntradaB[0] ; d                    ;
+; N/A   ; None              ; 11.856 ns       ; EntradaB[2] ; g                    ;
+; N/A   ; None              ; 11.842 ns       ; EntradaB[2] ; b                    ;
+; N/A   ; None              ; 11.815 ns       ; EntradaB[2] ; c                    ;
+; N/A   ; None              ; 11.806 ns       ; EntradaB[1] ; g                    ;
+; N/A   ; None              ; 11.794 ns       ; EntradaA[1] ; a                    ;
+; N/A   ; None              ; 11.781 ns       ; EntradaB[0] ; f                    ;
+; N/A   ; None              ; 11.779 ns       ; EntradaB[1] ; b                    ;
+; N/A   ; None              ; 11.765 ns       ; Seletor[2]  ; g                    ;
+; N/A   ; None              ; 11.744 ns       ; EntradaB[1] ; d                    ;
+; N/A   ; None              ; 11.738 ns       ; Seletor[2]  ; b                    ;
+; N/A   ; None              ; 11.712 ns       ; EntradaB[2] ; f                    ;
+; N/A   ; None              ; 11.703 ns       ; Seletor[2]  ; d                    ;
+; N/A   ; None              ; 11.676 ns       ; EntradaA[2] ; g                    ;
+; N/A   ; None              ; 11.663 ns       ; EntradaA[0] ; g                    ;
+; N/A   ; None              ; 11.663 ns       ; EntradaB[1] ; c                    ;
+; N/A   ; None              ; 11.662 ns       ; EntradaA[2] ; b                    ;
+; N/A   ; None              ; 11.649 ns       ; EntradaB[1] ; f                    ;
+; N/A   ; None              ; 11.636 ns       ; EntradaA[0] ; b                    ;
+; N/A   ; None              ; 11.635 ns       ; EntradaA[2] ; c                    ;
+; N/A   ; None              ; 11.608 ns       ; Seletor[2]  ; f                    ;
+; N/A   ; None              ; 11.601 ns       ; EntradaA[0] ; d                    ;
+; N/A   ; None              ; 11.532 ns       ; EntradaA[2] ; f                    ;
+; N/A   ; None              ; 11.506 ns       ; EntradaA[0] ; f                    ;
+; N/A   ; None              ; 11.501 ns       ; EntradaA[0] ; c                    ;
+; N/A   ; None              ; 11.477 ns       ; EntradaA[2] ; d                    ;
+; N/A   ; None              ; 11.455 ns       ; Seletor[0]  ; g                    ;
+; N/A   ; None              ; 11.428 ns       ; Seletor[0]  ; b                    ;
+; N/A   ; None              ; 11.401 ns       ; Seletor[2]  ; c                    ;
+; N/A   ; None              ; 11.393 ns       ; Seletor[0]  ; d                    ;
+; N/A   ; None              ; 11.325 ns       ; EntradaB[2] ; d                    ;
+; N/A   ; None              ; 11.323 ns       ; Seletor[0]  ; c                    ;
+; N/A   ; None              ; 11.298 ns       ; Seletor[0]  ; f                    ;
+; N/A   ; None              ; 11.222 ns       ; Seletor[1]  ; a                    ;
+; N/A   ; None              ; 10.976 ns       ; EntradaA[3] ; g                    ;
+; N/A   ; None              ; 10.965 ns       ; EntradaB[0] ; a                    ;
+; N/A   ; None              ; 10.962 ns       ; EntradaA[3] ; b                    ;
+; N/A   ; None              ; 10.935 ns       ; EntradaA[3] ; c                    ;
+; N/A   ; None              ; 10.915 ns       ; EntradaA[1] ; e                    ;
+; N/A   ; None              ; 10.895 ns       ; EntradaB[2] ; a                    ;
+; N/A   ; None              ; 10.866 ns       ; EntradaB[3] ; g                    ;
+; N/A   ; None              ; 10.852 ns       ; EntradaB[3] ; b                    ;
+; N/A   ; None              ; 10.832 ns       ; EntradaA[3] ; f                    ;
+; N/A   ; None              ; 10.832 ns       ; EntradaB[1] ; a                    ;
+; N/A   ; None              ; 10.825 ns       ; EntradaB[3] ; c                    ;
+; N/A   ; None              ; 10.791 ns       ; Seletor[2]  ; a                    ;
+; N/A   ; None              ; 10.722 ns       ; EntradaB[3] ; f                    ;
+; N/A   ; None              ; 10.715 ns       ; EntradaA[2] ; a                    ;
+; N/A   ; None              ; 10.689 ns       ; EntradaA[0] ; a                    ;
+; N/A   ; None              ; 10.481 ns       ; Seletor[0]  ; a                    ;
+; N/A   ; None              ; 10.397 ns       ; Seletor[1]  ; e                    ;
+; N/A   ; None              ; 10.140 ns       ; EntradaB[0] ; e                    ;
+; N/A   ; None              ; 10.015 ns       ; EntradaA[3] ; a                    ;
+; N/A   ; None              ; 9.905 ns        ; EntradaB[3] ; a                    ;
+; N/A   ; None              ; 9.793 ns        ; EntradaB[1] ; e                    ;
+; N/A   ; None              ; 9.739 ns        ; EntradaA[2] ; e                    ;
+; N/A   ; None              ; 9.656 ns        ; Seletor[2]  ; e                    ;
+; N/A   ; None              ; 9.651 ns        ; EntradaA[0] ; e                    ;
+; N/A   ; None              ; 9.615 ns        ; EntradaA[1] ; ResultadoOperacaoBit ;
+; N/A   ; None              ; 9.587 ns        ; EntradaB[2] ; e                    ;
+; N/A   ; None              ; 9.578 ns        ; Seletor[0]  ; e                    ;
+; N/A   ; None              ; 9.548 ns        ; EntradaA[1] ; Overflow             ;
+; N/A   ; None              ; 9.344 ns        ; EntradaB[2] ; ResultadoOperacaoBit ;
+; N/A   ; None              ; 9.231 ns        ; Seletor[2]  ; Overflow             ;
+; N/A   ; None              ; 9.208 ns        ; EntradaB[1] ; ResultadoOperacaoBit ;
+; N/A   ; None              ; 9.206 ns        ; EntradaB[2] ; Overflow             ;
+; N/A   ; None              ; 9.146 ns        ; EntradaA[2] ; ResultadoOperacaoBit ;
+; N/A   ; None              ; 9.145 ns        ; EntradaB[3] ; ResultadoOperacaoBit ;
+; N/A   ; None              ; 9.129 ns        ; EntradaA[3] ; ResultadoOperacaoBit ;
+; N/A   ; None              ; 9.046 ns        ; EntradaB[1] ; Overflow             ;
+; N/A   ; None              ; 9.027 ns        ; EntradaA[2] ; Overflow             ;
+; N/A   ; None              ; 8.961 ns        ; EntradaB[0] ; Overflow             ;
+; N/A   ; None              ; 8.933 ns        ; EntradaA[0] ; ResultadoOperacaoBit ;
+; N/A   ; None              ; 8.921 ns        ; Seletor[0]  ; Overflow             ;
+; N/A   ; None              ; 8.902 ns        ; Seletor[1]  ; Overflow             ;
+; N/A   ; None              ; 8.883 ns        ; EntradaA[0] ; Overflow             ;
+; N/A   ; None              ; 8.490 ns        ; EntradaB[3] ; Overflow             ;
+; N/A   ; None              ; 8.479 ns        ; Seletor[1]  ; ResultadoOperacaoBit ;
+; N/A   ; None              ; 8.474 ns        ; EntradaA[3] ; Overflow             ;
+; N/A   ; None              ; 8.227 ns        ; EntradaB[0] ; ResultadoOperacaoBit ;
+; N/A   ; None              ; 7.680 ns        ; Seletor[0]  ; ResultadoOperacaoBit ;
+; N/A   ; None              ; 7.591 ns        ; Seletor[2]  ; ResultadoOperacaoBit ;
++-------+-------------------+-----------------+-------------+----------------------+
 
 
 +--------------------------+
@@ -145,18 +196,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 02 19:18:10 2018
+    Info: Processing started: Sat Nov 03 00:18:51 2018
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off ProjetoSD -c ProjetoSD --timing_analysis_only
-Info: Longest tpd from source pin "C[1]" to destination pin "S[0]" is 10.709 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.817 ns) = 0.817 ns; Loc. = PIN_T9; Fanout = 15; PIN Node = 'C[1]'
-    Info: 2: + IC(5.354 ns) + CELL(0.366 ns) = 6.537 ns; Loc. = LCCOMB_X15_Y26_N24; Fanout = 1; COMB Node = 'inst22[0]~11'
-    Info: 3: + IC(1.113 ns) + CELL(0.154 ns) = 7.804 ns; Loc. = LCCOMB_X31_Y26_N10; Fanout = 1; COMB Node = 'inst22[0]~15'
-    Info: 4: + IC(0.761 ns) + CELL(2.144 ns) = 10.709 ns; Loc. = PIN_E3; Fanout = 0; PIN Node = 'S[0]'
-    Info: Total cell delay = 3.481 ns ( 32.51 % )
-    Info: Total interconnect delay = 7.228 ns ( 67.49 % )
+Info: Longest tpd from source pin "EntradaA[1]" to destination pin "g" is 12.768 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.847 ns) = 0.847 ns; Loc. = PIN_AA15; Fanout = 9; PIN Node = 'EntradaA[1]'
+    Info: 2: + IC(4.966 ns) + CELL(0.366 ns) = 6.179 ns; Loc. = LCCOMB_X31_Y3_N6; Fanout = 1; COMB Node = 'Mux4:inst5|inst22[1]~1'
+    Info: 3: + IC(0.241 ns) + CELL(0.228 ns) = 6.648 ns; Loc. = LCCOMB_X31_Y3_N16; Fanout = 7; COMB Node = 'Mux4:inst5|inst22[1]~2'
+    Info: 4: + IC(1.353 ns) + CELL(0.366 ns) = 8.367 ns; Loc. = LCCOMB_X21_Y4_N8; Fanout = 1; COMB Node = 'Display-8a7:inst7|inst37'
+    Info: 5: + IC(2.469 ns) + CELL(1.932 ns) = 12.768 ns; Loc. = PIN_H12; Fanout = 0; PIN Node = 'g'
+    Info: Total cell delay = 3.739 ns ( 29.28 % )
+    Info: Total interconnect delay = 9.029 ns ( 70.72 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 212 megabytes
-    Info: Processing ended: Fri Nov 02 19:18:11 2018
+    Info: Processing ended: Sat Nov 03 00:18:52 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

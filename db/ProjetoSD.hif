@@ -34,7 +34,402 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
+Mux4:inst5
+}
+# macro_sequence
+
+# end
+# entity
+SomadorBCDComDisplay
+# storage
+db|ProjetoSD.(1).cnf
+db|ProjetoSD.(1).cnf
+# case_insensitive
+# source_file
+somadorbcdcomdisplay.bdf
+1833c2e885b7765d93d13cbfb3d9343
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+SomadorBCD
+# storage
+db|ProjetoSD.(2).cnf
+db|ProjetoSD.(2).cnf
+# case_insensitive
+# source_file
+somadorbcd.bdf
+c1f69ae9bced45cb10aa5dc9f7f13d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+FullAdder
+# storage
+db|ProjetoSD.(3).cnf
+db|ProjetoSD.(3).cnf
+# case_insensitive
+# source_file
+fulladder.bdf
+63dc30d2dddbc785929135bae3275cf2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somador:inst|FullAdder:inst4
+Somador:inst|FullAdder:inst5
+Somador:inst|FullAdder:inst6
+Somador:inst|FullAdder:inst
+Subtrador:inst1|Complemento:inst|FullAdder:inst1
+Subtrador:inst1|Complemento:inst|FullAdder:inst2
+Subtrador:inst1|Complemento:inst|FullAdder:inst3
+Subtrador:inst1|Complemento:inst|FullAdder:inst
+Subtrador:inst1|Somador:inst1|FullAdder:inst4
+Subtrador:inst1|Somador:inst1|FullAdder:inst5
+Subtrador:inst1|Somador:inst1|FullAdder:inst6
+Subtrador:inst1|Somador:inst1|FullAdder:inst
+Complemento:inst2|FullAdder:inst1
+Complemento:inst2|FullAdder:inst2
+Complemento:inst2|FullAdder:inst3
+Complemento:inst2|FullAdder:inst
+}
+# macro_sequence
+
+# end
+# entity
+Display0a9
+# storage
+db|ProjetoSD.(4).cnf
+db|ProjetoSD.(4).cnf
+# case_insensitive
+# source_file
+display0a9.bdf
+e4aae9ded3a27bd926c8ad09e1ed019
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Display0a1
+# storage
+db|ProjetoSD.(5).cnf
+db|ProjetoSD.(5).cnf
+# case_insensitive
+# source_file
+display0a1.bdf
+c35ee47a72ccb284511b459d9dab5f5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+ULA
+# storage
+db|ProjetoSD.(6).cnf
+db|ProjetoSD.(6).cnf
+# case_insensitive
+# source_file
+ula.bdf
+2f493586d9fe34b3f06635ae2e128ea3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+Mux
+# storage
+db|ProjetoSD.(7).cnf
+db|ProjetoSD.(7).cnf
+# case_insensitive
+# source_file
+mux.bdf
+78ad47a65526e6cb862a1ad4b912f42
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux:inst6
+Mux:inst11
+}
+# macro_sequence
+
+# end
+# entity
+Somador
+# storage
+db|ProjetoSD.(8).cnf
+db|ProjetoSD.(8).cnf
+# case_insensitive
+# source_file
+somador.bdf
+17426860ebb62edd975cab2a84f7c00
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somador:inst
+Subtrador:inst1|Somador:inst1
+}
+# macro_sequence
+
+# end
+# entity
+Subtrador
+# storage
+db|ProjetoSD.(9).cnf
+db|ProjetoSD.(9).cnf
+# case_insensitive
+# source_file
+subtrador.bdf
+1890468c7169d198414285b42dfdebe
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Subtrador:inst1
+}
+# macro_sequence
+
+# end
+# entity
+Complemento
+# storage
+db|ProjetoSD.(10).cnf
+db|ProjetoSD.(10).cnf
+# case_insensitive
+# source_file
+complemento.bdf
+88c3374c346a7b17a78bf24b7ba9d8f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Subtrador:inst1|Complemento:inst
+Complemento:inst2
+}
+# macro_sequence
+
+# end
+# entity
+ComparadorMaiorQVetor
+# storage
+db|ProjetoSD.(11).cnf
+db|ProjetoSD.(11).cnf
+# case_insensitive
+# source_file
+comparadormaiorqvetor.bdf
+64f7cd49cb6b54b44c83c690556ded4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ComparadorMaiorQVetor:inst8
+}
+# macro_sequence
+
+# end
+# entity
+MaiorQSignificativo
+# storage
+db|ProjetoSD.(12).cnf
+db|ProjetoSD.(12).cnf
+# case_insensitive
+# source_file
+maiorqsignificativo.bdf
+b8d5938cb9daab7db1892e98aa65528
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ComparadorMaiorQVetor:inst8|MaiorQSignificativo:inst1
+ComparadorMenorQVetor:inst9|MaiorQSignificativo:inst4
+ComparadorMenorQVetor:inst9|MaiorQSignificativo:inst3
+ComparadorMenorQVetor:inst9|MaiorQSignificativo:inst
+}
+# macro_sequence
+
+# end
+# entity
+MaiorQ1bit
+# storage
+db|ProjetoSD.(13).cnf
+db|ProjetoSD.(13).cnf
+# case_insensitive
+# source_file
+maiorq1bit.bdf
+e9cc7546eeeb7d1ee3f264ea49f0f7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ComparadorMaiorQVetor:inst8|MaiorQ1bit:inst2
+ComparadorMaiorQVetor:inst8|MaiorQ1bit:inst3
+ComparadorMaiorQVetor:inst8|MaiorQ1bit:inst
+ComparadorMenorQVetor:inst9|MaiorQ1bit:inst7
+}
+# macro_sequence
+
+# end
+# entity
+ComparadorMenorQVetor
+# storage
+db|ProjetoSD.(14).cnf
+db|ProjetoSD.(14).cnf
+# case_insensitive
+# source_file
+comparadormenorqvetor.bdf
+5c9ce636232b5a83867ee7a2ebe1ed29
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ComparadorMenorQVetor:inst9
+}
+# macro_sequence
+
+# end
+# entity
+Igualdade4Bits
+# storage
+db|ProjetoSD.(15).cnf
+db|ProjetoSD.(15).cnf
+# case_insensitive
+# source_file
+igualdade4bits.bdf
+5bc26b1bf0d4678163edda6321c1ac4f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Igualdade4Bits:inst10
+}
+# macro_sequence
+
+# end
+# entity
+Igualdade1Bit
+# storage
+db|ProjetoSD.(16).cnf
+db|ProjetoSD.(16).cnf
+# case_insensitive
+# source_file
+igualdade1bit.bdf
+14eb24b67f66376a17663288283e46cb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Igualdade4Bits:inst10|Igualdade1Bit:inst2
+Igualdade4Bits:inst10|Igualdade1Bit:inst1
+Igualdade4Bits:inst10|Igualdade1Bit:inst3
+Igualdade4Bits:inst10|Igualdade1Bit:inst
+}
+# macro_sequence
+
+# end
+# entity
+Display-8a7
+# storage
+db|ProjetoSD.(17).cnf
+db|ProjetoSD.(17).cnf
+# case_insensitive
+# source_file
+display-8a7.bdf
+5a4dd45abc1a1a78229a9208f8e7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Display-8a7:inst7
+}
+# macro_sequence
+
+# end
+# entity
+ComparadorXor
+# storage
+db|ProjetoSD.(18).cnf
+db|ProjetoSD.(18).cnf
+# case_insensitive
+# source_file
+comparadorxor.bdf
+addd4f515ddb597d5d3db54e82ba276
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ComparadorXor:inst4
+}
+# macro_sequence
+
+# end
+# entity
+ComparadorAnd
+# storage
+db|ProjetoSD.(19).cnf
+db|ProjetoSD.(19).cnf
+# case_insensitive
+# source_file
+comparadorand.bdf
+4dbc629bb7bb736747e597491f5cb2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ComparadorAnd:inst3
 }
 # macro_sequence
 
